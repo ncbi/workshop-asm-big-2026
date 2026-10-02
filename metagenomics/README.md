@@ -1,345 +1,373 @@
-# Plasmids and Metagenomes
+# Plasmids and antimicrobial resistance in hospital metagenomes
 
-In this project we're going to examine a set of metagenomes and some plasmids we pull out and assemble from them.
+Explore DNA sequences from hospital environmental samples to recover plasmid-associated sequences and investigate their resistance genes. First, examine the samples' taxonomic composition. Then, select reads related to published plasmids, assemble those reads, and compare the resulting sequences with public data.
 
-This project uses data from the paper [Cheng et al., 2020 Cartography of opportunistic pathogens and antibiotic resistance genes in a tertiary hospital environment](https://pmc.ncbi.nlm.nih.gov/articles/PMC7303012/) 
-as a starting point. 
+## Background: metagenomes, plasmids, and resistance genes
 
+A **metagenome** contains genetic material sampled from a community of organisms. Shotgun metagenomic sequencing produces short DNA sequences, called **reads**, from that mixture. Unlike sequencing a cultured isolate, it can capture many organisms in one sample, but connecting a sequence to its organism of origin can be difficult. 
 
-We're going to:
-- Look at the results of the "STAT" tool from SRA for taxanomic representation in the metagenome.
-- From a set of assembled plasmids indicated in the paper, we've selected some interesting ones and we're going to pull out reads and try to assemble them from metagenomes.
-- Use BLAST to see how well our assemblies represent the target plasmids.
-- Look at AMR, virulence, and stress-resistance genes in those plasmids.
-- Use Pebblescout to see where they likely came from and see if we can find some assemblies and metagenomes that have them.
+**Plasmids** are DNA molecules that replicate separately from bacterial chromosomes. Some carry antimicrobial resistance (AMR) genes and can move between different bacteria. 
 
-See [software.md](software.md) for a list of the scientific software used below.
+An **assembly** joins overlapping reads into longer sequences called **contigs**. In this exercise, published plasmid sequences serve as targets to help select and assemble relevant reads. This focuses the analysis on related sequences; it will not recover every plasmid or resistance gene in the sample. A contig matching part of a plasmid also does not establish that a complete, circular plasmid has been recovered.
 
-## 1. Make a working directory
+Several tools are used in this project:
 
-    mkdir $HOME/microbiome
-    cd $HOME/microbiome
+| Resource or tool | What it contributes |
+| --- | --- |
+| [SRA Taxonomy Analysis Tool (STAT)](https://www.ncbi.nlm.nih.gov/sra/docs/sra-taxonomy-analysis-tool/) | Estimates the taxonomic composition of sequencing reads using matches to reference k-mers: short DNA words of a fixed length. |
+| [BWA-MEM2](https://github.com/bwa-mem2/bwa-mem2) and [SAMtools](https://www.htslib.org/) | Align reads to the plasmid targets and extract a smaller set for assembly. |
+| [SAUTE](https://github.com/ncbi/SKESA) | Uses target sequences to create a guided assembly. |
+| [Nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch) | Aligns assembled sequences to the published plasmids to examine coverage and similarity. |
+| [AMRFinderPlus](https://www.ncbi.nlm.nih.gov/pathogens/antimicrobial-resistance/AMRFinder/) | Identifies AMR genes and, with `--plus`, selected stress response and virulence genes. |
+| [Pebblescout](https://pebblescout.ncbi.nlm.nih.gov/#view=search) | Finds related sequences in SRA using informative short sequence matches. |
+| [NCBI Pathogen Detection](https://www.ncbi.nlm.nih.gov/pathogens/) | Connects matching isolates to metadata and detailed AMRFinderPlus results in MicroBIGG-E. |
 
-## 2. Grab some interesting plasmids from the paper
+## Case study: plasmids in a hospital environment
 
-### 2.1 Get the assemblies
+This project uses data from [Chng et al. (2020), *Cartography of opportunistic pathogens and antibiotic resistance genes in a tertiary hospital environment*](https://www.nature.com/articles/s41591-020-0894-4). The authors surveyed hospital surfaces in Singapore using shotgun metagenomics and long-read sequencing of enriched cultures. Their study recovered a large collection of plasmid sequences and examined hospital environments as reservoirs of microbes and resistance genes.
+
+Here, you will use three published plasmids as targets and two short-read metagenomes from bed-rail samples. These are mixed environmental samples, not cultured isolates. The study's [Supplementary Data 2](https://github.com/NCBI-Codeathons/asm-ngs-workshop/raw/main/blob/supplementary_file_2.xlsx) provides additional sample information.
+
+| SRA run | Sample ID | Collection date | Location | Sample type |
+| --- | --- | --- | --- | --- |
+| `ERR3209766` | `HMBR127_02` | 2017-11-28 | Floor 8, isolation room 3 | Bed rail |
+| `ERR3209768` | `HMBR133` | 2017-11-24 | Floor 11, isolation room 5 | Bed rail |
+
+## Exercise overview
+
+1. **Prepare the targets and reads.** Download published plasmid sequences, select three targets, and obtain and filter reads from two metagenomes.
+2. **Explore the sample composition.** Use STAT and its Krona display to examine the taxa represented in a sample.
+3. **Assemble and compare sequences.** Run SAUTE and use BLAST to compare the assemblies with the plasmid targets.
+4. **Investigate resistance genes and related genomes.** Run AMRFinderPlus, search Pebblescout, and follow a match into Pathogen Detection.
+
+Use the [workshop Jupyter environment](https://jupyterhub01.ncbi.nlm.nih.gov/) for terminal commands and file viewing. See [software.md](software.md) for the programs needed. An NCBI account is needed for cross-browser selection in the final step. Downloads and assembly can take several minutes and require space for the reads and temporary files.
+
+> The sample outputs below come from the original workshop example. Software versions, database updates, and live browser results can change the exact counts and matches.
+
+## Exercise: recover and investigate plasmid-associated sequences
+
+### Part 1: prepare plasmid targets and metagenomic reads
+
+#### 1. Open a terminal and create a working directory
+
+In Jupyter, click **+** to open a Launcher, then select **Terminal**. Run these commands one line at a time, pressing **Enter** after each:
+
+```bash
+mkdir -p "$HOME/microbiome"
+cd "$HOME/microbiome"
+pwd
 ```
-## obtain plasmid assemblies
-wget https://ndownloader.figshare.com/files/21229998
-mv 21229998 contigs.fa.gz
+
+`mkdir -p` creates a folder if it does not already exist, `cd` moves into it, and `pwd` prints its path. `$HOME` refers to your home directory on the workshop system. Keep using this working directory for the remaining commands; use `ls` whenever you want to list its files.
+
+For commands spanning several lines, copy and paste the entire block. A trailing backslash (`\`) continues a command on the next line and must be the last character on that line. Wait for the terminal prompt to return before starting the next step.
+
+#### 2. Download published plasmid assemblies and metadata
+
+Download the assembly file from the study's data collection:
+
+```bash
+wget -O contigs.fa.gz https://ndownloader.figshare.com/files/21229998
 gunzip contigs.fa.gz
 ```
 
-### 2.2 Get some information about the plasmids from supplementary data
-```
-## obtain information about the plasmid assemblies
-wget https://ndownloader.figshare.com/files/21229983
-mv 21229983 plasmid_info.tab
+`wget -O` downloads the file under the specified name. `gunzip` decompresses it to `contigs.fa`, a FASTA file of sequences.
 
-## get list of contigs with AMR genes from the paper
+Download the accompanying plasmid information and the authors' analysis repository:
+
+```bash
+wget -O plasmid_info.tab https://ndownloader.figshare.com/files/21229983
 git clone https://github.com/csb5/hospital_microbiome.git
+```
 
-egrep -i 'ctx|ges|tem|shv' ./hospital_microbiome/tables/plasmid_info.dat | awk '{ if ($5 >= 0) print $0}' | sort -nrk5 | head -3 | cut -f2 >plasmid.list
-## result is 3 plasmids
+The clone creates a `hospital_microbiome` directory. The selection below uses its `tables/plasmid_info.dat` table; `plasmid_info.tab` is additional metadata you can inspect.
+
+#### 3. Select three plasmid targets
+
+Run:
+
+```bash
+grep -Ei 'ctx|ges|tem|shv' hospital_microbiome/tables/plasmid_info.dat | \
+    awk '{ if ($5 >= 0) print $0}' | \
+    sort -nrk5 | head -3 | cut -f2 > plasmid.list
+cat plasmid.list
 ```
-We should have 3 plasmids in the list now
-```
-    cat plasmid.list
-```
-You should see:
-```
+
+The pipe symbol (`|`) passes one command's output to the next. This pipeline selects rows containing the listed beta-lactamase family terms, sorts them by the number of resistance genes in column 5, and saves the three leading plasmid identifiers from column 2. `>` writes the output to a file, replacing that file if it exists; `cat` displays its contents.
+
+Expected identifiers:
+
+```text
 p_1687
 p_83
 p_3128
 ```
 
-### 2.3 Extract the interesting plasmids from the sequence contigs we downloaded
-```
-mkdir plasmids
+Extract these sequences and combine them into one target file:
 
-for i in `cat plasmid.list`
+```bash
+mkdir -p plasmids
+
+for plasmid in $(cat plasmid.list)
 do
-    # fagrep $i contigs.fa >plasmids/$i.fna
-    seqkit grep -n -r -p "$i\$" contigs.fa > plasmids/$i.fna
+    seqkit grep -n -r -p "${plasmid}\$" contigs.fa > "plasmids/${plasmid}.fna"
 done
+
+cat plasmids/*.fna > plasmid_references.fasta
 ```
 
-### 2.4 For convenience concatenate those into a single file
+The `for` loop repeats the extraction for each identifier in `plasmid.list`. SeqKit searches sequence names for that identifier at the end of the name. The wildcard `*` in `plasmids/*.fna` selects all the extracted FASTA files.
 
-```
-    cat plasmids/*.fna > plasmid_references.fasta
-```
+#### 4. Download the two metagenomic read sets
 
-## 3. Download and filter reads for a couple of metagenomic samples
+Create a file containing the two run accessions. Paste the whole block, including the final `END` line:
 
-### 3.1 Download reads using `prefetch` and `fasterq-dump`
-
-```
+```bash
 cat > sra.acc <<END
 ERR3209766
 ERR3209768
 END
 ```
-<!-- deleted ERR3209849 -->
 
-```
-date
-for acc in `cat sra.acc`
+The lines between `<<END` and `END` become the contents of `sra.acc`. Download each run and convert it to paired FASTQ files:
+
+```bash
+for acc in $(cat sra.acc)
 do
-    echo $acc
-    prefetch $acc
-    fasterq-dump --split-files $acc
-    ls -l *.fastq
-    date
+    echo "$acc"
+    prefetch "$acc"
+    fasterq-dump --split-files "$acc"
+    ls -lh "${acc}_1.fastq" "${acc}_2.fastq"
 done
-
 ```
 
-### 3.2 Extract read-pairs aligning to the plasmid
+`prefetch` downloads SRA data, and `fasterq-dump --split-files` writes the paired reads to files ending in `_1.fastq` and `_2.fastq`. Each pair represents sequences from the two ends of a DNA fragment. FASTQ files include sequence quality scores as well as the reads themselves.
 
-We're going to isolate the read-pairs aligning to the plasmid to make the assembly problem easier and faster for the assembler. 
+#### 5. Select reads for assembly
 
-These smaller sets of reads are also useful if you want to look closer at the sequence of the reads and how individual reads align to the plasmid reference.
+Index the target sequences, align each read set, and extract paired reads for the next step:
 
-```
+```bash
 bwa-mem2 index plasmid_references.fasta
-for acc in `cat sra.acc`
+
+for acc in $(cat sra.acc)
 do
-    time bwa-mem2 mem -t 8 plasmid_references.fasta ${acc}_1.fastq ${acc}_2.fastq | \
+    bwa-mem2 mem -t 8 plasmid_references.fasta "${acc}_1.fastq" "${acc}_2.fastq" | \
         samtools view -u -F 8 - | \
-        samtools fastq -1 ${acc}_mapped_1.fastq -2 ${acc}_mapped_2.fastq \
+        samtools fastq -1 "${acc}_mapped_1.fastq" -2 "${acc}_mapped_2.fastq" \
             -0 /dev/null -s /dev/null -
 done
 ```
 
-This should take 3-5 minutes to complete.
+BWA-MEM2 aligns the reads to the three targets using eight threads. `samtools view -F 8` excludes alignment records whose mate is unmapped. `samtools fastq` writes paired FASTQ files; the `-s /dev/null` option discards singletons, so this workflow retains pairs with both mates represented after filtering. This produces a smaller input for assembly, but may miss divergent regions and reads extending beyond the targets. The original example took about 3–5 minutes; runtime depends on the system.
 
-### 3.3 Look at how many reads we have filtered down to
+Inspect the read counts:
 
-```
+```bash
 seqkit stats *.fastq
 ```
-You should see something like:
-```
-file                       format  type   num_seqs      sum_len  min_len  avg_len  max_len
-ERR3209766_1.fastq         FASTQ   DNA   8,296,848  828,470,982       30     99.9      101
-ERR3209766_2.fastq         FASTQ   DNA   8,296,848  828,470,737       30     99.9      101
-ERR3209766_mapped_1.fastq  FASTQ   DNA      41,211    4,118,496       33     99.9      101
-ERR3209766_mapped_2.fastq  FASTQ   DNA      41,211    4,118,496       33     99.9      101
-ERR3209768_1.fastq         FASTQ   DNA   4,036,058  405,359,151       30    100.4      101
-ERR3209768_2.fastq         FASTQ   DNA   4,036,058  405,359,074       30    100.4      101
-ERR3209768_mapped_1.fastq  FASTQ   DNA     124,749   12,526,481       30    100.4      101
-ERR3209768_mapped_2.fastq  FASTQ   DNA     124,749   12,526,479       30    100.4      101
-```
 
-## 4. Now we're going to look at the resistome data from Supplementary data 2
+<details>
+<summary>Example read counts</summary>
 
-[Supplementary File 2](https://github.com/NCBI-Codeathons/asm-ngs-workshop/raw/main/blob/supplementary_file_2.xlsx) has information on the taxonomic content and AMR content of shotgun metagenomic samples.
+| Run | Reads in each original mate file | Reads in each filtered mate file |
+| --- | ---: | ---: |
+| `ERR3209766` | 8,296,848 | 41,211 |
+| `ERR3209768` | 4,036,058 | 124,749 |
 
-We're looking more closely at a subset of the runs listed here:
+The two filtered mate files for each run should have equal read counts. The counts above are per file, not the sum of both mates.
 
-|Date of Collection | Sample ID | Timepoint Hospital | Floor | Ward Type        | Ward/Room Number |   Sample Type  | Bed Number | Surface Material | Illumina Library ID | SRR             |
-| ----------------- | --------- | ------------------ | ----- | ---------------- | ---------------- | -------------- | ---------- | ---------------- | ------------------- | --------------- |
-|        2017-11-28 | HMBR127_02|         2          |     8 | Isolation room   |                3 | Bed Rail       |            | Plastic          | WEE037              |      ERR3209766 |
-|        2017-11-24 | HMBR133   |         1          |    11 | Isolation room   |                5 | Bed Rail       |            | Plastic          | WEE039              |      ERR3209768 |
-<!-- |        2017-11-23 | HMBL103   |         1          |     7 | Standard         |                3 | Bedside Locker | 5          | Wood             | WEE120              |      ERR3209849 |
--->
+</details>
 
-### 4.1 Check out the SRA stat tool results for these isolates
+How much did filtering reduce each read set? Why might a read matching one of these targets also match another plasmid or a chromosome?
 
-The Analysis tab of the Run selector interface from SRA shows taxonomic breakdowns of the reads based on alignment to a database of taxon-specific kmers. This is similar to the process used by Kraken if you're familiar with that.
+> **If something goes wrong:** Use `pwd` and `ls` to check your directory and input filenames. If a program is not found, consult the [software list](software.md) and ask an instructor for help. If a download or conversion fails, resolve that error before continuing; later steps depend on its output.
 
-#### 4.1.1 Go to https://www.ncbi.nlm.nih.gov/
+### Part 2: explore the sample's taxonomic composition
 
-#### 4.1.2 Search for the SRA run accession ERR3209768
+#### 6. Open the SRA Run Browser
 
-![Search for ERR3209768 on the NCBI home page](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics1-search.png)
+While working with these reads, use STAT to investigate which taxa are represented in the sample. STAT compares read k-mers with a reference database and summarizes the taxonomic assignments; it does not assign a host to each assembled plasmid.
 
-#### 4.1.3 Click the link to see the SRA record
+Open the [NCBI homepage](https://www.ncbi.nlm.nih.gov/) and search for `ERR3209768`.
 
-![Click the link to get to the SRA record](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics2-link_to_sra.png)
+![Search for ERR3209768 on the NCBI homepage](../images/metagenomics1-search.png)
 
-#### 4.1.4 Click the SRA accession ERR3209768 in the table at the bottom of the record to get to the Run Browser
+Follow the link to the SRA record.
 
-![Click the accession to get to the Run Browser](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics3-go_to_run_browser.png)
-  ([Direct link](https://trace.ncbi.nlm.nih.gov/Traces/?run=ERR3209768))
+![Follow the link to the SRA record](../images/metagenomics2-link_to_sra.png)
 
-#### 4.1.5 Click Analysis to see the STAT tool results
+Click `ERR3209768` in the run table to open the Run Browser, or [open the run directly](https://trace.ncbi.nlm.nih.gov/Traces/?run=ERR3209768).
 
-![Click the analysis tab to see STAT tool results](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics4-analysis.png)
+![Open ERR3209768 in the Run Browser](../images/metagenomics3-go_to_run_browser.png)
 
-#### 4.1.6 Click to expand some of the taxa in the list view.
+#### 7. Inspect STAT and the Krona view
 
-#### 4.1.7 Try the Krona view below and look for Klebsiella
+Select the **Analysis** tab.
 
-![Click *Show Krona View*](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics5-krona.png)
+![Open the Analysis tab for STAT results](../images/metagenomics4-analysis.png)
 
-## 5. Assemble the filtered reads with SAUTE 
+Expand taxa in the list, then select **Show Krona View**. The interactive chart lets you explore the taxonomic hierarchy.
 
-### 5.1 Run SAUTE for each for each readset and each target
+![Open the Krona view](../images/metagenomics5-krona.png)
 
-[SAUTE](https://github.com/ncbi/SKESA) ([Souvorov and Agarwala, 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8293564/) is a reference guided assembler developed at NCBI. We're going to use that to assemble the sequences we pulled out to see if we can find these plasmids in the sequences.
+- Which taxa account for large portions of the assigned reads?
+- Can you find _Klebsiella_?
+- Why would finding _Klebsiella_ reads be insufficient to assign a particular plasmid to that genus?
 
-Assemble the reads using SAUTE with the plasmids as the targets 
+### Part 3: assemble and compare plasmid-associated sequences
 
-```
-echo `date` Starting assemblies >> log
+#### 8. Run SAUTE for each sample and target
+
+[SAUTE: Sequence Assembly Using Target Enrichment](https://pmc.ncbi.nlm.nih.gov/articles/PMC8293564/) assembles sequences from reads using targets to guide the search through an assembly graph. Here, the targets are the published plasmids. The reconstructed sequences are supported by the sample reads and may differ from the targets.
+
+Return to the Jupyter terminal and run:
+
+```bash
 date
-for acc in `cat sra.acc`
+for acc in $(cat sra.acc)
 do
-    for plasmid in `cat plasmid.list`
+    for plasmid in $(cat plasmid.list)
     do
-        saute --targets ./plasmids/$plasmid.fna \
-            --reads ${acc}_mapped_1.fastq,${acc}_mapped_2.fastq \
-            --gfa $acc.$plasmid.gfa \
-            --all_variants $acc.$plasmid.all.fa --max_variants 1 \
-            --target_coverage 0.1 --extend_ends  --cores 4
+        saute --targets "./plasmids/${plasmid}.fna" \
+            --reads "${acc}_mapped_1.fastq,${acc}_mapped_2.fastq" \
+            --gfa "${acc}.${plasmid}.gfa" \
+            --all_variants "${acc}.${plasmid}.all.fa" --max_variants 1 \
+            --target_coverage 0.1 --extend_ends --cores 4
     done
-    date
 done
-echo `date` Finished assemblies >> log
+date
 ```
 
-Here we used nested for loops. The first loop runs for every accession we used, and the second for every target.
+The outer loop visits each sample, and the inner loop visits each plasmid: six assembly runs in total. `--targets` supplies the plasmid sequence and `--reads` supplies the filtered paired reads. `--gfa` saves the assembly graph, while `--all_variants` saves assembled sequences in FASTA format. These workshop settings permit partial target recovery and extend assembled ends where possible. `date` displays the time before and after the runs.
 
-### 5.2 Take a look at what we assembled
-```
-ls -l *.all.fa
-```
-```
--rw-r--r-- 1 jupyter-aprasad jupyter-aprasad 188342 May 23 14:25 ERR3209766.p_1687.all.fa
--rw-r--r-- 1 jupyter-aprasad jupyter-aprasad      0 May 23 14:25 ERR3209766.p_3128.all.fa
--rw-r--r-- 1 jupyter-aprasad jupyter-aprasad 104661 May 23 14:26 ERR3209766.p_83.all.fa
--rw-r--r-- 1 jupyter-aprasad jupyter-aprasad 183467 May 23 14:28 ERR3209768.p_1687.all.fa
--rw-r--r-- 1 jupyter-aprasad jupyter-aprasad      0 May 23 14:28 ERR3209768.p_3128.all.fa
--rw-r--r-- 1 jupyter-aprasad jupyter-aprasad 182100 May 23 14:29 ERR3209768.p_83.all.fa
-```
+#### 9. Inspect the assemblies
 
-We can use seqkit to get a slightly closer look at the assemblies
+List the output files and summarize their sequence lengths:
 
-```
+```bash
+ls -lh *.all.fa
 seqkit stats *.all.fa
-```
-```
-processed files:  9 / 9 [======================================] ETA: 0s. done
-file                      format  type  num_seqs  sum_len  min_len   avg_len  max_len
-ERR3209766.p_1687.all.fa  FASTA   DNA          2  188,008   87,905    94,004  100,103
-ERR3209766.p_3128.all.fa                       0        0        0         0        0
-ERR3209766.p_83.all.fa    FASTA   DNA          3  104,416   27,125  34,805.3   39,503
-ERR3209768.p_1687.all.fa  FASTA   DNA          3  182,728   20,518  60,909.3  127,364
-ERR3209768.p_3128.all.fa                       0        0        0         0        0
-ERR3209768.p_83.all.fa    FASTA   DNA          3  181,592   34,554  60,530.7   83,126
+seqkit fx2tab -l -n plasmids/*.fna
 ```
 
-```
-seqkit fx2tab -l -n plasmids/*
-```
-```
-p_1687  195980
-p_3128  227286
-p_83    145343
-```
+`seqkit stats` reports the number and lengths of sequences in each assembly. `seqkit fx2tab -l -n` displays the target sequence names and lengths.
 
-It looks like there are plasmid assemblies from ERR3209766 and ERR3209768 to p\_1687 and p\_83.
-We'll take a closer look at *p_1687*
+<details>
+<summary>Example assembly results</summary>
 
-## 6. Blast assemblies against the reference using web blast
+| Assembly file | Number of sequences | Total length (bp) |
+| --- | ---: | ---: |
+| `ERR3209766.p_1687.all.fa` | 2 | 188,008 |
+| `ERR3209766.p_3128.all.fa` | 0 | 0 |
+| `ERR3209766.p_83.all.fa` | 3 | 104,416 |
+| `ERR3209768.p_1687.all.fa` | 3 | 182,728 |
+| `ERR3209768.p_3128.all.fa` | 0 | 0 |
+| `ERR3209768.p_83.all.fa` | 3 | 181,592 |
 
-From this we can get an idea of how our assemblies cover the reference.
+The target lengths in the original example were 195,980 bp for `p_1687`, 145,343 bp for `p_83`, and 227,286 bp for `p_3128`. An empty output means no sequence was reported under these settings; it does not prove the plasmid is absent from the sample. Some SeqKit versions may report an error for an empty FASTA file; inspect the nonempty files individually if needed.
 
-#### 6.1 Download the assembly files
+</details>
 
-Download *`ERR3209768.p_1687.all.fa`* and the plasmid references `plasmid_references.fasta` by right clicking on the filename in the Jupyter file list and selecting "Download".
+The original example recovered sequences related to `p_1687` and `p_83` in both samples. Continue with `p_1687`. Total assembly length alone does not measure target coverage: assembled sequences may overlap or extend into other regions.
 
-![Right click the filename and select download](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics7-file_download.png)
+#### 10. Compare the assemblies with the targets using BLAST
 
-#### 6.2 Go to nucleotide blast 
+In Jupyter's file browser, right-click `ERR3209768.p_1687.all.fa` and choose **Download**. Also download `plasmid_references.fasta`.
 
-    [Nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch) - <https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch>
+![Download a file from Jupyter](../images/metagenomics7-file_download.png)
 
-#### 6.3 Select the reference plasmids file (plasmid_references.fasta) as your "Query Sequence" and select "Align two or more seuences"
+Open [Nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch). Under **Query Sequence**, choose `plasmid_references.fasta`, then select **Align two or more sequences**.
 
-Click *Choose File* and select the `plasmid_references.fasta` file you just downloaded then click the *Align two or more sequences* checkbox.
+![Choose the plasmid references as the query and enable sequence comparison](../images/metagenomics8-query_sequence.png)
 
-![Choose plasmid_references.fasta as the Query sequence and click Align two or more sequences](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics8-query_sequence.png)
+Under **Subject Sequence**, choose `ERR3209768.p_1687.all.fa`.
 
-#### 6.4 Choose the assembly file (ERR3209768.p_1687.all.fa) as your "Subject Sequence"
+![Choose the assembly as the subject](../images/metagenomics9-subject_sequence.png)
 
-![Select ERR3209768.p_1687.all.fa as the subject sequence](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics9-subject_sequence.png)
+Leave the other settings at their defaults and click **BLAST**.
 
-#### 6.5 Leave all other options the default and click ![BLAST](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics11-blast_button.png)
+![BLAST button](../images/metagenomics11-blast_button.png)
 
-#### 6.6 View the Graphic Summary
+In the results, select the `p_1687` query and inspect the **Graphic Summary** and individual alignments.
 
-![View the Graphic Summary](https://raw.githubusercontent.com/ncbi/workshop-asm-2026/refs/heads/main/images/metagenomics10-graphic_summary.png)
+![BLAST Graphic Summary](../images/metagenomics10-graphic_summary.png)
 
-Look at the Graphic Summary tab and see that there is pretty good coverage over the query plasmid p_1687 in three contigs.
+- How much of the target is covered by the assembled sequences?
+- Are there gaps, overlapping matches, or changes in alignment orientation?
+- How similar are the aligned regions?
 
-Do the same for the ERR3209766.p_1687.all.fa assembly
+The original example showed substantial coverage of `p_1687` across three contigs. Repeat the comparison using `ERR3209766.p_1687.all.fa` as the subject. Use the alignments to assess what was recovered; partial matches alone do not establish a complete plasmid.
 
+### Part 4: investigate resistance genes and related genomes
 
-## 7. Examine the antibiotic, stress resistance, and virulence genes
+#### 11. Run AMRFinderPlus on the assemblies and target
 
-### 7.1 Run AMRFinderPlus on the assemblies and the reference
+Compare the two `p_1687` assemblies with the published target:
 
-[AMRFinderPlus](https://github.com/ncbi/amr/wiki) is software and a database that identifies antibiotic resistance-associated genes and point mutations in assembled sequence. With the --plus option it also identifies select stress resistance and virulence genes.
-
-```
-amrfinder -n ERR3209766.p_1687.all.fa --plus > ERR3209766.p_1687.all.amrfinder
-amrfinder -n ERR3209768.p_1687.all.fa --plus > ERR3209768.p_1687.all.amrfinder
-amrfinder -n plasmids/p_1687.fna --plus > p_1687.amrfinder
-```
-
-### 7.2 Take a look at the results
-```
-d2l ERR3209766.p_1687.all.amrfinder
-d2l p_1687.amrfinder
+```bash
+amrfinder -V
+amrfinder -n ERR3209766.p_1687.all.fa --plus -o ERR3209766.p_1687.amrfinder.tsv
+amrfinder -n ERR3209768.p_1687.all.fa --plus -o ERR3209768.p_1687.amrfinder.tsv
+amrfinder -n plasmids/p_1687.fna --plus -o p_1687.amrfinder.tsv
 ```
 
-Notice there were many more genes identified in our assembly, and that the reference has a lot of "PARTIALX" hits from AMRFinderPlus. That indicates that our assembly is probably of higher quality then the reference.
+`-n` supplies nucleotide sequences, `--plus` includes selected stress response and virulence genes, and `-o` saves a table. Note the software and database versions printed by `amrfinder -V`. These are nucleotide-only searches: no protein annotation is supplied. We omit `--organism` because the host of these metagenomic sequences has not been established.
 
-## 8. Can we figure out the taxon this plasmid commonly occurs in using pebblescout?
+#### 12. Compare the AMRFinderPlus results
 
-We will use [pebblescout](https://pebblescout.ncbi.nlm.nih.gov/#view=search) to search for this plasmid in all assemblies at NCBI.
+Open each `.tsv` file in Jupyter's file browser. If it opens as text, right-click and select **Open With → TSV Viewer**.
 
-Pebblescout is a way of very quickly searching for sequences that likely contain our query sequence based on the selection of 25mers. It looks at the presence of kmers weighing rare kmers more highly than common ones.
+Compare **Element symbol**, **Type**, **Class**, **Method**, **% Coverage of reference**, and **% Identity to reference**. Older versions use **Gene symbol** in place of **Element symbol**. See [Interpreting AMRFinderPlus results](https://github.com/ncbi/amr/wiki/Interpreting-results) for field and method definitions.
 
-### 8.1 Go to [Pebblescout](https://pebblescout.ncbi.nlm.nih.gov/#view=search) 
+- Which resistance genes occur in both the target and the reconstructed sequences?
+- Which results differ between the samples or the target?
+- Do partial hits in the target have more complete matches in your assemblies?
 
-### 8.2 Query using the assembly we already downloaded, `ERR3209768.p_1687.all.fa`. 
+<details>
+<summary>Interpret the original example</summary>
 
-Click **Choose File** and select `ERR3209768.p_1687.all.fa` from your downloads directory.
+The original workshop example reported more genes in the reconstructed sequences and several `PARTIALX` hits in the published target. A `PARTIALX` result is a partial match found through a translated nucleotide search. More complete matches can suggest improved recovery of individual genes, but a larger gene count alone does not establish a better assembly: sequence differences, extensions, and assembly errors can also affect the results.
 
-### 8.3 Select the WGS, Volume 1 index
+Use the BLAST alignments and AMRFinderPlus match evidence together. Gene detection describes sequence content; it does not measure the antibiotic susceptibility of an organism in this mixed sample.
 
-### 8.4 Click View to see the results
+</details>
 
-- Note the **%coverage** and **PBScore** values. 
-- Open some of the biosample accessions in a new tab to get an idea of what these isolates are
+#### 13. Search for related sequences with Pebblescout
 
-We see several assemblies with 90% or more of the kmers covered and they're all _Klebsiella pneumoniae_, so we can surmise that this plasmid often occurs in _Klebsiella pneumoniae_.
+[Pebblescout](https://pebblescout.ncbi.nlm.nih.gov/#view=search) searches indexed sequence collections using short sequence matches, giving more weight to informative matches. It helps identify records for closer investigation; use alignments to assess their detailed similarity.
 
-### 8.5 Take a top hit and look at it in MicroBIGG-E
+1. Open Pebblescout and click **Choose File**.
+2. Select the downloaded `ERR3209768.p_1687.all.fa` file.
+3. Select the **WGS, Volume 1** index used in the original exercise, if available. If the available indexes have changed, select an appropriate WGS assembly index and record its name.
+4. Submit the search and open its results using **View** when available.
+5. Examine **%coverage** and **PBScore**, then follow BioSample links for several strong matches.
 
-These _Klebsiella pneumoniae_ assemblies should be in NCBI Pathogen Detection where you can see more about them. Try searching [NCBI Pathogen Detection](https://www.ncbi.nlm.nih.gov/pathogens/) for one or more of the top hits E.g., https://www.ncbi.nlm.nih.gov/pathogens/isolates/#SAMN16824518  Use the cross browser selection to see the AMRFinderPlus results for that isolate. Looks like many of the same genes we saw earlier. 
+These scores summarize sequence matches in the selected index; they are not BLAST percent identity. Consult the [Pebblescout introduction](https://ncbiinsights.ncbi.nlm.nih.gov/2023/09/14/introducing-pebblescout/) for the search approach.
 
-#### Search for SAMN16824518 in MicroBIGG-E
+Which organisms appear among the strong matches, and what do the sample metadata tell you about their sources?
 
-- Go to [MicroBIGG-E](https://www.ncbi.nlm.nih.gov/pathogens/microbigge/) and paste in SAMN16824518
-  ([direct link](https://www.be-md.ncbi.nlm.nih.gov/pathogens/microbigge/#SAMN16824518)
-- Sort by contig ID and notice some of the same sets of genes
+<details>
+<summary>Interpret the original example</summary>
 
-#### Search for SAMN16824518 in the Isolates browser
+Several original matches had more than 90% coverage and were associated with _Klebsiella pneumoniae_ assemblies. This suggests that related sequences occur in genomes assigned to that species. Plasmids can move between hosts, so these matches do not establish which organism carried the sequence in either bed-rail sample.
 
-- Use cross-browser selection or search for SAMN16824518
-- Note that it isn't in a "SNP cluster", and the **Location** and **AMR genotypes** columns
+</details>
 
+#### 14. Follow a match into Pathogen Detection
 
+Choose a matching BioSample to investigate. The original example used **`SAMN16824518`**; you can [open its Isolates Browser search](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#SAMN16824518).
 
-# Stretch project
+Inspect the **Location**, **AMR genotypes**, and **SNP cluster** fields. The original record had no SNP cluster assignment; check its current status rather than assuming it is unchanged.
 
-Use NCBI Datasets to download one of the assemblies we found with pebblescout and see if we can pull out contigs aligning to our contig to see if the same plasmid is actually there.
+Sign in to NCBI, click **Cross-browser selection**, and choose **Show in MicroBIGG-E**. Alternatively, search for the BioSample directly in [MicroBIGG-E](https://www.ncbi.nlm.nih.gov/pathogens/microbigge/#SAMN16824518).
 
+Sort by **Contig id** and compare the resistance elements with your AMRFinderPlus results. Finding genes together on a contig adds information about their genomic context, although a shared gene list alone does not prove that two sequences represent the same plasmid.
 
-######################################################################
+- Which resistance genes are shared with your reconstructed sequences?
+- Are they located together on a contig in the matching assembly?
+- What additional sequence comparison would strengthen the case that these are related plasmids?
 
+## Optional extension: compare a matching assembly
+
+Use [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/) to download one of the assemblies identified through Pebblescout. Find contigs that align to your reconstructed sequence and compare alignment coverage, sequence identity, and resistance-gene organization. Explain which observations support a related plasmid and which questions remain unresolved.
