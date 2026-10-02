@@ -1,0 +1,851 @@
+#undefined	BioSample	Organism group	Scientific name	Isolation type	Location	Isolation source	Isolate	Antibiotic	Resistance phenotype	Measurement sign	MIC (mg/L)	Disk diffusion (mm)	Laboratory typing platform	Vendor	Laboratory typing method version or reagent	Testing standard	Create date
+	SAMN26198733	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	USA:PA	SALMON (SA)	PDT001276576.1	ciprofloxacin	susceptible	==	0.06		Sensititre	Trek	96-Well Plate	CLSI	2022-03-30T10:53:50Z
+	SAMN26198732	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	USA:SC	SALMON (SA)	PDT001276577.1	ciprofloxacin	susceptible	==	0.12		Sensititre	Trek	96-Well Plate	CLSI	2022-03-30T10:53:51Z
+	SAMN26198737	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	USA:NY	SHRIMP (SH)	PDT001276631.1	ciprofloxacin	susceptible	==	0.12		Sensititre	Trek	96-Well Plate	CLSI	2022-03-30T10:54:09Z
+	SAMN26198736	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	USA:MO	SALMON (SA)	PDT001276632.1	ciprofloxacin	susceptible	==	0.12		Sensititre	Trek	96-Well Plate	CLSI	2022-03-30T10:54:09Z
+	SAMN26198735	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	USA:CA	SHRIMP (SH)	PDT001276633.1	ciprofloxacin	susceptible	==	0.25		Sensititre	Trek	96-Well Plate	CLSI	2022-03-30T10:54:10Z
+	SAMN26198734	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	USA:SC	SALMON (SA)	PDT001276634.1	ciprofloxacin	susceptible	==	0.12		Sensititre	Trek	96-Well Plate	CLSI	2022-03-30T10:54:10Z
+	SAMN29441944	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395237.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:39:42Z
+	SAMN29441860	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395373.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:07:22Z
+	SAMN29441856	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395375.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:07:40Z
+	SAMN29441855	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395378.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:08:07Z
+	SAMN29441819	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395414.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:51Z
+	SAMN29441815	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395417.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:14:31Z
+	SAMN29441816	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395418.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:14:40Z
+	SAMN29441811	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395421.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:04Z
+	SAMN29441801	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395433.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:16:48Z
+	SAMN29441799	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395434.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:16:57Z
+	SAMN29441790	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395443.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:18:12Z
+	SAMN29441777	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395455.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:34Z
+	SAMN29441982	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395196.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:38Z
+	SAMN29441981	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395197.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:41Z
+	SAMN29441972	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395206.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:31:42Z
+	SAMN29441967	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395208.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:33:13Z
+	SAMN29441965	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395212.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:33:51Z
+	SAMN29441952	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395225.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:36:16Z
+	SAMN29441947	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395229.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:37:11Z
+	SAMN29441948	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395231.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:37:32Z
+	SAMN29441945	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395232.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:37:42Z
+	SAMN29441946	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395233.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:37:53Z
+	SAMN29441943	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395234.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:39:11Z
+	SAMN29441934	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395242.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:40:22Z
+	SAMN29441930	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395246.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:41:22Z
+	SAMN29441929	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	blood	PDT001395247.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:41:31Z
+	SAMN29441926	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395251.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:42:43Z
+	SAMN29441919	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395258.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:44:40Z
+	SAMN29441922	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395259.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:44:51Z
+	SAMN29441912	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395267.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:46:24Z
+	SAMN29441907	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395269.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:46:43Z
+	SAMN29441908	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395270.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:46:52Z
+	SAMN29441904	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395272.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:48:12Z
+	SAMN29441906	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395273.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:48:22Z
+	SAMN29441903	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395277.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:49:00Z
+	SAMN29441893	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395281.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:50:16Z
+	SAMN29441897	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395283.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:50:36Z
+	SAMN29441891	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395288.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:51:17Z
+	SAMN29441890	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395289.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:51:34Z
+	SAMN29441883	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395349.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:01:53Z
+	SAMN29441881	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395352.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:02:19Z
+	SAMN29441879	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395354.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:02:36Z
+	SAMN29441877	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395356.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:03:19Z
+	SAMN29441876	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395357.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:03:28Z
+	SAMN29441875	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395358.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:03:37Z
+	SAMN29441872	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395361.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:04:20Z
+	SAMN29441870	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395363.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:05:11Z
+	SAMN29441868	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395364.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:05:21Z
+	SAMN29441869	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395365.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:05:30Z
+	SAMN29441861	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395372.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:07:13Z
+	SAMN29441854	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395380.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:09:20Z
+	SAMN29441850	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395383.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:09:47Z
+	SAMN29441849	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395384.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:09:56Z
+	SAMN29441847	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395385.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:05Z
+	SAMN29441848	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395386.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:12Z
+	SAMN29441843	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	other	PDT001395389.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:24Z
+	SAMN29441842	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395391.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:39Z
+	SAMN29441839	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395393.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:57Z
+	SAMN29441841	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395394.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:11:07Z
+	SAMN29441838	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395395.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:11:12Z
+	SAMN29441836	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395398.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:12:11Z
+	SAMN29441832	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395400.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:12:29Z
+	SAMN29441831	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395402.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:12:47Z
+	SAMN29441830	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395403.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:12:56Z
+	SAMN29441826	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395405.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:11Z
+	SAMN29441828	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395406.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:15Z
+	SAMN29441827	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395407.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:20Z
+	SAMN29441824	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395408.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:23Z
+	SAMN29441825	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395409.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:29Z
+	SAMN29441822	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395410.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:32Z
+	SAMN29441823	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395411.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:38Z
+	SAMN29441820	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395413.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:47Z
+	SAMN29441818	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395415.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:14:12Z
+	SAMN29441814	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395419.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:14:48Z
+	SAMN29441813	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395420.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:14:56Z
+	SAMN29441812	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395422.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:12Z
+	SAMN29441810	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395423.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:14Z
+	SAMN29441809	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395424.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:21Z
+	SAMN29441805	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395427.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:32Z
+	SAMN29441800	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395431.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:16:30Z
+	SAMN29441803	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395432.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:16:39Z
+	SAMN29441798	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395435.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:17:06Z
+	SAMN29441796	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395436.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:17:12Z
+	SAMN29441795	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395438.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:17:20Z
+	SAMN29441793	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395440.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:17:29Z
+	SAMN29441792	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395441.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:17:32Z
+	SAMN29441791	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Tissue	PDT001395442.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:17:37Z
+	SAMN29441789	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395444.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:18:20Z
+	SAMN29441788	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395445.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:18:29Z
+	SAMN29441786	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395446.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:18:40Z
+	SAMN29441787	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395447.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:18:49Z
+	SAMN29441784	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395449.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:07Z
+	SAMN29441781	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395450.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:11Z
+	SAMN29441782	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395451.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:16Z
+	SAMN29441783	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395452.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:20Z
+	SAMN29441780	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395453.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:25Z
+	SAMN29441779	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395454.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:29Z
+	SAMN29441778	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395456.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:19:38Z
+	SAMN33819368	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145642.1	ciprofloxacin	susceptible	==		32.0				CLSI	2024-04-24T00:04:16Z
+	SAMN33819367	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145643.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:04:22Z
+	SAMN33819365	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145644.1	ciprofloxacin	susceptible	==		33.0				CLSI	2024-04-24T00:04:30Z
+	SAMN33819366	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145645.1	ciprofloxacin	susceptible	==		31.0				CLSI	2024-04-24T00:04:37Z
+	SAMN33819364	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145646.1	ciprofloxacin	susceptible	==		37.0				CLSI	2024-04-24T00:04:43Z
+	SAMN33819360	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145647.1	ciprofloxacin	resistant	==		6.0				CLSI	2024-04-24T00:04:49Z
+	SAMN33819361	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145648.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:04:56Z
+	SAMN33819362	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145649.1	ciprofloxacin	susceptible	==		31.0				CLSI	2024-04-24T00:05:01Z
+	SAMN33819363	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145650.1	ciprofloxacin	intermediate	==		24.0				CLSI	2024-04-24T00:05:08Z
+	SAMN33819359	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145651.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:05:13Z
+	SAMN33819358	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145652.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:05:17Z
+	SAMN33819355	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145653.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:05:20Z
+	SAMN33819357	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145654.1	ciprofloxacin	intermediate	==		20.0				CLSI	2024-04-24T00:06:16Z
+	SAMN33819356	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145655.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:06:23Z
+	SAMN33819354	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145656.1	ciprofloxacin	intermediate	==		22.0				CLSI	2024-04-24T00:06:29Z
+	SAMN33819353	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145657.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:06:36Z
+	SAMN33819350	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145658.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:06:41Z
+	SAMN33819352	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145659.1	ciprofloxacin	susceptible	==		31.0				CLSI	2024-04-24T00:06:48Z
+	SAMN33819351	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145660.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:06:55Z
+	SAMN33819349	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145661.1	ciprofloxacin	intermediate	==		23.0				CLSI	2024-04-24T00:07:02Z
+	SAMN33819347	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145708.1	ciprofloxacin	susceptible	==		28.0				CLSI	2024-04-24T00:07:13Z
+	SAMN33819348	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145709.1	ciprofloxacin	resistant	==		12.0				CLSI	2024-04-24T00:07:19Z
+	SAMN33819345	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145710.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:08:14Z
+	SAMN33819341	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145711.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:08:19Z
+	SAMN33819344	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145712.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:08:25Z
+	SAMN33819346	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145713.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:08:32Z
+	SAMN33819340	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145714.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:08:38Z
+	SAMN33819343	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145715.1	ciprofloxacin	susceptible	==		34.0				CLSI	2024-04-24T00:08:45Z
+	SAMN33819337	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145716.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:09:11Z
+	SAMN33819338	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145717.1	ciprofloxacin	intermediate	==		19.0				CLSI	2024-04-24T00:10:16Z
+	SAMN33819339	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145718.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:10:23Z
+	SAMN33819336	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145719.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:10:30Z
+	SAMN33819335	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145720.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:10:36Z
+	SAMN33819334	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145721.1	ciprofloxacin	susceptible	==		27.0				CLSI	2024-04-24T00:10:43Z
+	SAMN33819332	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145722.1	ciprofloxacin	susceptible	==		30.0				CLSI	2024-04-24T00:11:10Z
+	SAMN33819333	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145723.1	ciprofloxacin	intermediate	==		24.0				CLSI	2024-04-24T00:11:10Z
+	SAMN33819330	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145724.1	ciprofloxacin	susceptible	==		27.0				CLSI	2024-04-24T00:11:17Z
+	SAMN33819331	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145725.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:11:17Z
+	SAMN33819328	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145726.1	ciprofloxacin	intermediate	==		20.0				CLSI	2024-04-24T00:11:24Z
+	SAMN33819327	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145727.1	ciprofloxacin	susceptible	==		31.0				CLSI	2024-04-24T00:12:22Z
+	SAMN33819326	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145728.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:12:28Z
+	SAMN33819329	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145729.1	ciprofloxacin	susceptible	==		28.0				CLSI	2024-04-24T00:12:35Z
+	SAMN33819325	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145730.1	ciprofloxacin	susceptible	==		31.0				CLSI	2024-04-24T00:12:42Z
+	SAMN33819324	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145731.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:12:49Z
+	SAMN33819323	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145732.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:12:56Z
+	SAMN33819342	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146255.1	ciprofloxacin	susceptible	==		29.0				CLSI	2024-04-24T00:42:09Z
+	SAMN48878268	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991231.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:49:26Z
+	SAMN48878267	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SURGICAL/PROCEDURE SPECIMEN	PDT002991232.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:49:26Z
+	SAMN48878897	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	DRAINAGE	PDT002991273.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:49:34Z
+	SAMN48878818	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002991287.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:49:37Z
+	SAMN48878734	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, STRAIGHT CATH	PDT002991309.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:49:42Z
+	SAMN48878728	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	ARM,LEFT	PDT002991315.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:49:43Z
+	SAMN48878641	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CATH INDWELLING	PDT002991338.1	ciprofloxacin	intermediate	==	1.0		Vitek	Biomérieux		CLSI	2025-11-20T17:49:48Z
+	SAMN48878640	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, INDUCED	PDT002991339.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:49:49Z
+	SAMN48878478	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	DRAINAGE	PDT002991373.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:49:55Z
+	SAMN48878471	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, STRAIGHT CATH	PDT002991381.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:49:56Z
+	SAMN48878462	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991390.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:49:58Z
+	SAMN48878414	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	DECUBITIS ULCER	PDT002991395.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux		CLSI	2025-11-20T17:49:59Z
+	SAMN48878407	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	blood	PDT002991402.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux		CLSI	2025-11-20T17:50:00Z
+	SAMN48878054	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, STRAIGHT CATH	PDT002991405.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:00Z
+	SAMN48878345	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	blood	PDT002991420.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:03Z
+	SAMN48878147	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991447.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:50:09Z
+	SAMN48878139	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991456.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:50:10Z
+	SAMN48878138	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991457.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux		CLSI	2025-11-20T17:50:11Z
+	SAMN48878951	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002991467.1	ciprofloxacin	intermediate	==	1.0		Vitek	Biomérieux		CLSI	2025-11-20T17:50:13Z
+	SAMN48878944	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	DRAINAGE	PDT002991475.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:50:15Z
+	SAMN48878938	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CATH INDWELLING	PDT002991480.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:50:16Z
+	SAMN48878872	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	BRONCHOALVEOLAR LAVAGE/WASH	PDT002991482.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:50:16Z
+	SAMN48878851	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002991503.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:50:21Z
+	SAMN48878680	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	blood	PDT002991547.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux		CLSI	2025-11-20T17:50:30Z
+	SAMN48878609	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, NEPHROSTOMY LEFT	PDT002991554.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:32Z
+	SAMN48878597	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	LESION	PDT002991567.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:50:34Z
+	SAMN48878596	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, INDUCED	PDT002991568.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:34Z
+	SAMN48878519	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	blood	PDT002991581.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux		CLSI	2025-11-20T17:50:37Z
+	SAMN48878515	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991585.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:38Z
+	SAMN48878508	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	blood	PDT002991594.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:39Z
+	SAMN48878330	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991599.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:40Z
+	SAMN48878329	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991600.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:40Z
+	SAMN48878323	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	AXILLA,LEFT	PDT002991607.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:42Z
+	SAMN48878321	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, INDUCED	PDT002991609.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:50:42Z
+	SAMN48878246	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002991643.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:50:49Z
+	SAMN48878927	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, EXPECTORATED	PDT002991701.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:51:00Z
+	SAMN48878850	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	BRONCHOALVEOLAR LAVAGE/WASH	PDT002991715.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:02Z
+	SAMN48878849	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CATH INDWELLING	PDT002991716.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:51:03Z
+	SAMN48878846	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, STRAIGHT CATH	PDT002991719.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:03Z
+	SAMN48878844	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991721.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:04Z
+	SAMN48878756	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002991746.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:09Z
+	SAMN48878746	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CATH INDWELLING	PDT002991757.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:11Z
+	SAMN48878676	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	swab	PDT002991762.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:51:12Z
+	SAMN48878659	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, NEPHROSTOMY LEFT	PDT002991781.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux		CLSI	2025-11-20T17:51:16Z
+	SAMN48878575	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991800.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux		CLSI	2025-11-20T17:51:20Z
+	SAMN48878499	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991812.1	ciprofloxacin	intermediate	==	1.0		Vitek	Biomérieux		CLSI	2025-11-20T17:51:22Z
+	SAMN48878497	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	blood	PDT002991814.1	ciprofloxacin	intermediate	==	1.0		Vitek	Biomérieux		CLSI	2025-11-20T17:51:23Z
+	SAMN48878374	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002991853.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:30Z
+	SAMN48878373	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	FOOT,RIGHT	PDT002991854.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:30Z
+	SAMN48878372	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	BRONCHOALVEOLAR LAVAGE/WASH	PDT002991855.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:51:31Z
+	SAMN48878362	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991866.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:33Z
+	SAMN48878361	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002991867.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:51:33Z
+	SAMN48878303	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991884.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:37Z
+	SAMN48878296	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002991891.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:38Z
+	SAMN48878244	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	swab	PDT002991901.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:40Z
+	SAMN48878237	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CATH INDWELLING	PDT002991908.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:41Z
+	SAMN48878169	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991934.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:47Z
+	SAMN48878162	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	aspirate	PDT002991942.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:49Z
+	SAMN48878886	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CATH INDWELLING	PDT002991973.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:51:55Z
+	SAMN48878882	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991978.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:51:56Z
+	SAMN48878878	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, STRAIGHT CATH	PDT002991982.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:51:57Z
+	SAMN48878877	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002991983.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:51:57Z
+	SAMN48878798	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	DRAINAGE	PDT002991998.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:00Z
+	SAMN48878796	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, NEPHROSTOMY RIGHT	PDT002992000.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:01Z
+	SAMN48878720	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002992011.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:03Z
+	SAMN48878718	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002992013.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:03Z
+	SAMN48878616	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, INDUCED	PDT002992053.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:11Z
+	SAMN48878615	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002992054.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:12Z
+	SAMN48878075	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	abdomen	PDT002992055.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:12Z
+	SAMN48878545	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002992060.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux		CLSI	2025-11-20T17:52:13Z
+	SAMN48878533	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002992074.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:52:16Z
+	SAMN48878532	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	SPUTUM, TRACHEAL ASPIRATE/SUCTION	PDT002992075.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2025-11-20T17:52:16Z
+	SAMN48878452	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002992092.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:20Z
+	SAMN48878440	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	sputum	PDT002992103.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:22Z
+	SAMN48878053	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CATH INDWELLING	PDT002992106.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:22Z
+	SAMN48878389	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	blood	PDT002992112.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:23Z
+	SAMN48878042	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: California	URINE, CLEAN VOID	PDT002992130.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux		CLSI	2025-11-20T17:52:27Z
+	SAMN23150585	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	China: Shanghai	pus	PDT001211266.1	ciprofloxacin	resistant	==	8.0				96-Well Plate	CLSI	2021-12-20T23:01:45Z
+	SAMN23150586	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	China: Shanghai	pus	PDT001211267.1	ciprofloxacin	resistant	==	8.0				96-Well Plate	CLSI	2021-12-20T23:02:12Z
+	SAMN29442023	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395155.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:23:46Z
+	SAMN29441989	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395188.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:29:54Z
+	SAMN29441990	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Tissue	PDT001395189.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:04Z
+	SAMN29441988	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Tissue	PDT001395190.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:11Z
+	SAMN29441986	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395191.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:12Z
+	SAMN29441987	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Tissue	PDT001395192.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:20Z
+	SAMN29441983	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395193.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:22Z
+	SAMN29441984	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395194.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:29Z
+	SAMN29441985	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395195.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:31Z
+	SAMN29441979	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395199.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:50Z
+	SAMN29441980	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395200.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:56Z
+	SAMN29441977	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395201.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:31:00Z
+	SAMN29441976	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	blood	PDT001395202.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:31:05Z
+	SAMN29441975	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395203.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:31:11Z
+	SAMN29441974	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395204.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:31:20Z
+	SAMN29441973	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395205.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:31:34Z
+	SAMN29441969	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395207.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:32:12Z
+	SAMN29441970	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395209.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:33:21Z
+	SAMN29441968	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395210.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:33:30Z
+	SAMN29441971	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395211.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:33:42Z
+	SAMN29441966	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395213.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:34:00Z
+	SAMN29441964	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395214.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:34:09Z
+	SAMN29441960	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395217.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:34:26Z
+	SAMN29441957	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395219.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:35:24Z
+	SAMN29441958	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395220.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:35:37Z
+	SAMN29441956	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395221.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:35:45Z
+	SAMN29441959	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395222.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:35:54Z
+	SAMN29441953	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395223.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:36:03Z
+	SAMN29441955	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395224.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:36:11Z
+	SAMN29441949	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395226.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:36:26Z
+	SAMN29441954	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395227.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:36:35Z
+	SAMN29441951	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395228.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:36:47Z
+	SAMN29441950	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395230.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:37:22Z
+	SAMN29441942	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395235.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:39:22Z
+	SAMN29441940	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	blood	PDT001395236.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:39:32Z
+	SAMN29441938	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395238.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:39:52Z
+	SAMN29441941	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395239.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:40:04Z
+	SAMN29441939	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Tissue	PDT001395240.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:40:13Z
+	SAMN29441935	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395241.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:40:13Z
+	SAMN29441936	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395244.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:40:31Z
+	SAMN29441933	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395245.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:41:11Z
+	SAMN29441931	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395249.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:42:25Z
+	SAMN29441927	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395250.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:42:34Z
+	SAMN29441921	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395256.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:44:20Z
+	SAMN29441923	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395257.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:44:30Z
+	SAMN29441917	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395260.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:45:05Z
+	SAMN29441916	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395261.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:45:12Z
+	SAMN29441915	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395262.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:45:16Z
+	SAMN29441914	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395263.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:45:22Z
+	SAMN29441913	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395265.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:45:31Z
+	SAMN29441910	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395266.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:46:13Z
+	SAMN29441911	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395268.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:46:32Z
+	SAMN29441909	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395271.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:47:01Z
+	SAMN29441901	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395274.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:48:31Z
+	SAMN29441905	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395275.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:48:41Z
+	SAMN29441900	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395276.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:48:50Z
+	SAMN29441902	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395278.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:49:09Z
+	SAMN29441899	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395279.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:49:12Z
+	SAMN29441898	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395280.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:49:19Z
+	SAMN29441895	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395282.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:50:25Z
+	SAMN29441896	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395284.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:50:45Z
+	SAMN29441892	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395285.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:50:58Z
+	SAMN29441894	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395286.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:51:08Z
+	SAMN29441886	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395290.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:52:12Z
+	SAMN29441887	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395295.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:53:41Z
+	SAMN29441885	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395296.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:53:50Z
+	SAMN29441884	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395350.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:02:01Z
+	SAMN29441882	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395351.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:02:10Z
+	SAMN29441880	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395353.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:02:28Z
+	SAMN29441878	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395355.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:03:10Z
+	SAMN29441874	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395359.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:03:46Z
+	SAMN29441873	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395360.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:04:11Z
+	SAMN29441867	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395366.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:05:39Z
+	SAMN29441866	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395368.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:05:56Z
+	SAMN29441862	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395370.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:06:21Z
+	SAMN29441863	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395371.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:06:30Z
+	SAMN29441859	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395374.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:07:32Z
+	SAMN29441852	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395381.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:09:29Z
+	SAMN29441846	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Tissue	PDT001395387.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:15Z
+	SAMN29441845	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Tissue	PDT001395388.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:22Z
+	SAMN29441834	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395399.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:12:21Z
+	SAMN29441829	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395404.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:06Z
+	SAMN29441817	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395416.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:14:21Z
+	SAMN29441807	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395425.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:24Z
+	SAMN29441808	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	Surveillance	PDT001395426.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:30Z
+	SAMN29441804	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395429.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:16:13Z
+	SAMN29441802	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395430.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:16:21Z
+	SAMN29441797	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395437.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:17:15Z
+	SAMN29441785	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395448.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:18:58Z
+	SAMN31006041	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Iran: Sanandaj	wound	PDT001500746.1	ciprofloxacin	susceptible	==		24.0				CLSI	2022-11-23T23:01:11Z
+	SAMN30492531	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Iran: Sanandaj	wound	PDT001500747.1	ciprofloxacin	susceptible	==		24.0				CLSI	2022-11-23T23:01:41Z
+	SAMN40930680	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	blood	PDT002136288.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux	96-Well Plate	CLSI	2024-04-11T13:50:16Z
+	SAMN40930679	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	blood	PDT002136289.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux	96-Well Plate	CLSI	2024-04-11T13:50:16Z
+	SAMN40930678	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	blood	PDT002136290.1	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux	96-Well Plate	CLSI	2024-04-11T13:50:18Z
+	SAMN33819321	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145733.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:13:02Z
+	SAMN33819319	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145734.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:13:09Z
+	SAMN33819320	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145735.1	ciprofloxacin	intermediate	==		22.0				CLSI	2024-04-24T00:13:12Z
+	SAMN33819318	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145736.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:13:15Z
+	SAMN33819322	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145737.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:13:19Z
+	SAMN33819317	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145738.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:19:12Z
+	SAMN33819313	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145739.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:20:18Z
+	SAMN33819314	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145740.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:20:24Z
+	SAMN33819316	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145741.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:20:30Z
+	SAMN33819315	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145742.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:20:36Z
+	SAMN33819310	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145744.1	ciprofloxacin	intermediate	==		23.0				CLSI	2024-04-24T00:20:49Z
+	SAMN33819308	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002145745.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:20:54Z
+	SAMN33819309	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146173.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:21:00Z
+	SAMN33819311	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146174.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:21:10Z
+	SAMN33819307	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146175.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:21:13Z
+	SAMN33819305	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146176.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:21:17Z
+	SAMN33819306	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146177.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:21:18Z
+	SAMN33819303	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146178.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:21:24Z
+	SAMN33819302	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146179.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:21:26Z
+	SAMN33819301	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146180.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:21:29Z
+	SAMN33819297	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146182.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:21:35Z
+	SAMN33819296	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146183.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:22:11Z
+	SAMN33819298	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146184.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:22:18Z
+	SAMN33819299	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146185.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:22:24Z
+	SAMN33819294	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146186.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:22:30Z
+	SAMN33819295	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146187.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:22:36Z
+	SAMN33819292	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146188.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:22:43Z
+	SAMN33819293	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146189.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:22:49Z
+	SAMN33819291	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146190.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:22:56Z
+	SAMN33819289	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146191.1	ciprofloxacin	intermediate	==		21.0				CLSI	2024-04-24T00:23:02Z
+	SAMN33819290	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146192.1	ciprofloxacin	intermediate	==		22.0				CLSI	2024-04-24T00:23:08Z
+	SAMN33819288	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146193.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:23:10Z
+	SAMN33819286	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146194.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:24:11Z
+	SAMN33819287	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146195.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:24:16Z
+	SAMN33819285	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146196.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:24:23Z
+	SAMN33819283	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146197.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:24:28Z
+	SAMN33819284	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146198.1	ciprofloxacin	intermediate	==		21.0				CLSI	2024-04-24T00:24:35Z
+	SAMN33819281	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146199.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:24:42Z
+	SAMN33819282	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146200.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:24:51Z
+	SAMN33819280	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146201.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:24:58Z
+	SAMN33819279	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146202.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:25:04Z
+	SAMN33819278	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146203.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:25:10Z
+	SAMN33819275	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146204.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:25:16Z
+	SAMN33819273	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146205.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:25:17Z
+	SAMN33819276	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146206.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:25:22Z
+	SAMN33819274	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146207.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:25:23Z
+	SAMN33819272	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146209.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:26:19Z
+	SAMN33819269	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146210.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:26:25Z
+	SAMN33819271	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146211.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:26:33Z
+	SAMN33819270	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146212.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:26:40Z
+	SAMN33819268	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146213.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:26:46Z
+	SAMN33819263	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146214.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:26:52Z
+	SAMN33819264	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146215.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:27:00Z
+	SAMN33819266	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146216.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:27:06Z
+	SAMN33819267	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146217.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:27:10Z
+	SAMN33819260	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146218.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:28:16Z
+	SAMN33819262	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146219.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:28:22Z
+	SAMN33819259	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146220.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:28:28Z
+	SAMN33819261	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146221.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:28:34Z
+	SAMN33819258	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146222.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:28:40Z
+	SAMN33819256	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146223.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:28:47Z
+	SAMN33819255	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146224.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:28:54Z
+	SAMN33819257	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146225.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:29:00Z
+	SAMN33819253	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146226.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:29:05Z
+	SAMN33819254	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146227.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:29:12Z
+	SAMN33819251	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146228.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:29:17Z
+	SAMN33819252	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146229.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:29:21Z
+	SAMN33819249	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146230.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:29:25Z
+	SAMN33819248	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146231.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:29:27Z
+	SAMN33819250	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146232.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:29:30Z
+	SAMN33819247	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146233.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:29:33Z
+	SAMN33819246	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146234.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:29:37Z
+	SAMN33819245	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146235.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:30:14Z
+	SAMN33819243	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146236.1	ciprofloxacin	intermediate	==		20.0				CLSI	2024-04-24T00:30:28Z
+	SAMN33819242	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146237.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:30:35Z
+	SAMN33819241	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146238.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:30:42Z
+	SAMN33819239	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146239.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:30:48Z
+	SAMN33819240	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146240.1	ciprofloxacin	intermediate	==		23.0				CLSI	2024-04-24T00:30:54Z
+	SAMN33819238	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146241.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:32:14Z
+	SAMN33819236	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146243.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:32:34Z
+	SAMN33819235	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146244.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:32:39Z
+	SAMN33819234	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146245.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:32:45Z
+	SAMN33819231	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146246.1	ciprofloxacin	intermediate	==		23.0				CLSI	2024-04-24T00:32:51Z
+	SAMN33819232	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146247.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:32:57Z
+	SAMN33819233	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146248.1	ciprofloxacin	resistant	<		18.0				CLSI	2024-04-24T00:33:04Z
+	SAMN33819230	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146249.1	ciprofloxacin	intermediate	==		22.0				CLSI	2024-04-24T00:33:11Z
+	SAMN33819228	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146250.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:33:15Z
+	SAMN33819229	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146251.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:33:17Z
+	SAMN33819227	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146252.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:33:21Z
+	SAMN33819226	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146253.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:33:25Z
+	SAMN33819304	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Nashville, TN		PDT002146254.1	ciprofloxacin	susceptible	>=		25.0				CLSI	2024-04-24T00:42:04Z
+	SAMN41136728	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	Brazil: Curitiba	Hospital effluent	PDT002711695.1	ciprofloxacin	susceptible-dose dependent	==	0.25				96-Well Plate	EUCAST	2025-04-09T05:09:19Z
+	SAMN29442029	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395149.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:22:23Z
+	SAMN29442028	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395150.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:22:32Z
+	SAMN29442027	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395151.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:23:11Z
+	SAMN29442026	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395152.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:23:20Z
+	SAMN29442018	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395160.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:25:20Z
+	SAMN29442017	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395161.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:25:28Z
+	SAMN29442016	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395162.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:25:37Z
+	SAMN29442015	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395163.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:25:45Z
+	SAMN29442014	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395164.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:25:57Z
+	SAMN29442011	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395165.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:06Z
+	SAMN29442010	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395166.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:13Z
+	SAMN29442013	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395167.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:15Z
+	SAMN29442012	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395168.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:23Z
+	SAMN29442008	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395169.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:24Z
+	SAMN29442006	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395170.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:27Z
+	SAMN29442007	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395172.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:40Z
+	SAMN29442005	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395173.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:49Z
+	SAMN29442004	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395174.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:26:58Z
+	SAMN29442003	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395175.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:27:07Z
+	SAMN29442002	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395176.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:27:11Z
+	SAMN29442001	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395177.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:27:20Z
+	SAMN29442000	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395178.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:27:29Z
+	SAMN29441999	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395179.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:27:38Z
+	SAMN29441997	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395180.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:27:47Z
+	SAMN29441998	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395181.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:27:56Z
+	SAMN29441996	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	other	PDT001395182.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:28:05Z
+	SAMN29441992	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395183.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:29:11Z
+	SAMN29441994	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395185.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:29:30Z
+	SAMN29441993	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	blood	PDT001395186.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:29:38Z
+	SAMN29441991	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395187.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:29:46Z
+	SAMN29441978	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395198.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:30:47Z
+	SAMN29441962	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395215.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:34:12Z
+	SAMN29441961	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395216.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:34:19Z
+	SAMN29441963	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395218.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:35:12Z
+	SAMN29441928	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	blood	PDT001395252.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:42:52Z
+	SAMN29441920	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395255.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:44:11Z
+	SAMN29441918	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395264.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:45:28Z
+	SAMN29441864	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395369.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:06:12Z
+	SAMN29441806	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT001395428.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:15:39Z
+	SAMN34104072	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	blood	PDT001684050.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	96-Well Plate	CLSI	2023-04-07T17:43:04Z
+	SAMN34104070	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	blood	PDT001684052.2	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	96-Well Plate	CLSI	2024-02-19T04:16:12Z
+	SAMN36726658	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	Nasal wound	PDT001830568.2	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	96-Well Plate	CLSI	2024-02-17T06:12:36Z
+	SAMN36729022	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	Perineal abscess	PDT001830967.2	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux	96-Well Plate	CLSI	2024-02-06T14:06:49Z
+	SAMN40930681	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	blood	PDT002136286.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux	96-Well Plate	CLSI	2024-04-11T13:50:16Z
+	SAMN54368221	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	Dominican Republic: Otra Banda, Santiago	freshwater	PDT003053841.1	ciprofloxacin	susceptible	<=	0.125		Phoenix			CLSI	2026-01-12T00:38:42Z
+	SAMN04096273	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	urine	PDT000084290.3	ciprofloxacin	resistant	==		6.0	KB panel	Becton Dickinson		CLSI	2015-12-01T18:21:06Z
+	SAMN04096277	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	bronchial alveolar lavage	PDT000084304.3	ciprofloxacin	resistant	==		6.0	KB panel	Becton Dickinson		CLSI	2015-12-01T18:21:06Z
+	SAMN04571739	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	bile	PDT000124854.2	ciprofloxacin	intermediate	==		19.0		Becton Dickinson		CLSI	2016-04-12T18:10:23Z
+	SAMN05194536	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	abdominal	PDT000133654.2	ciprofloxacin	susceptible	==		24.0	KB panel	Becton Dickinson		CLSI	2016-06-06T16:14:37Z
+	SAMN05374473	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	sputum	PDT000140731.2	ciprofloxacin	resistant	==		6.0	KB panel	Becton Dickinson		CLSI	2016-07-25T11:20:44Z
+	SAMN05374474	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	bronchial alveolar lavage	PDT000140738.2	ciprofloxacin	resistant	==		15.0	KB panel	Becton Dickinson		CLSI	2016-07-25T12:20:08Z
+	SAMN05510445	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	bronchial alveolar lavage	PDT000144509.2	ciprofloxacin	intermediate	==		20.0	KB panel	Becton Dickinson		CLSI	2016-08-16T10:23:21Z
+	SAMN05806171	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	sputum	PDT000150947.2	ciprofloxacin	resistant	==	13.0		Vitek	Biomérieux		CLSI	2016-10-01T15:22:16Z
+	SAMN05806170	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	bronchial alveolar lavage	PDT000150960.2	ciprofloxacin	resistant	==		6.0	KB panel	Becton Dickinson		CLSI	2016-10-01T15:22:38Z
+	SAMN04901655	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152708.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901656	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152709.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901657	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152710.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901658	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152711.2	ciprofloxacin	resistant	==	4.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901622	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152712.3	ciprofloxacin	resistant	==	4.0					CLSI	2025-03-21T12:23:17Z
+	SAMN04901659	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152713.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901660	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152714.2	ciprofloxacin	resistant	==	8.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901661	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152715.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901662	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152716.2	ciprofloxacin	resistant	==	8.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901623	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152717.2	ciprofloxacin	susceptible	==	1.0					CLSI	2016-10-17T12:20:44Z
+	SAMN04901624	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152718.3	ciprofloxacin	resistant	==	4.0					CLSI	2025-03-21T12:23:17Z
+	SAMN04901625	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152719.3	ciprofloxacin	resistant	>	8.0					CLSI	2025-03-21T12:23:16Z
+	SAMN04901626	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152720.3	ciprofloxacin	resistant	==	8.0					CLSI	2025-03-21T12:23:16Z
+	SAMN04901627	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152721.2	ciprofloxacin	susceptible	<=	0.25					CLSI	2016-10-17T12:20:44Z
+	SAMN04901628	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152722.2	ciprofloxacin	susceptible	<=	0.25					CLSI	2016-10-17T12:20:44Z
+	SAMN04901619	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152778.3	ciprofloxacin	resistant	>	8.0					CLSI	2025-03-21T12:23:18Z
+	SAMN04901629	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152780.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901634	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152781.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901637	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152782.2	ciprofloxacin	susceptible	<=	0.25					CLSI	2016-10-17T12:20:47Z
+	SAMN04901641	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152783.2	ciprofloxacin	resistant	==	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901643	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152784.2	ciprofloxacin	susceptible	==	0.5					CLSI	2016-10-17T12:20:47Z
+	SAMN04901644	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152785.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901645	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152786.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901646	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152787.2	ciprofloxacin	susceptible	<=	0.25					CLSI	2016-10-17T12:20:47Z
+	SAMN04901647	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152788.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901648	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152789.2	ciprofloxacin	susceptible	<=	0.25					CLSI	2016-10-17T12:20:47Z
+	SAMN04901621	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152790.3	ciprofloxacin	resistant	>	8.0					CLSI	2025-03-21T12:23:18Z
+	SAMN04901649	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152791.2	ciprofloxacin	susceptible	<=	0.25					CLSI	2016-10-17T12:20:47Z
+	SAMN04901650	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152792.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901651	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152793.2	ciprofloxacin	resistant	==	4.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901652	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152794.2	ciprofloxacin	susceptible	==	1.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901653	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152795.2	ciprofloxacin	intermediate	==	2.0					CLSI	2016-10-17T12:20:47Z
+	SAMN04901654	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000152796.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-10-17T12:20:47Z
+	SAMN06129825	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	induced sputum	PDT000172050.3	ciprofloxacin	susceptible	==		26.0	KB panel	Becton Dickinson		CLSI	2017-04-13T17:56:05Z
+	SAMN06007778	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	sputum	PDT000173722.2	ciprofloxacin	resistant	==		6.0	KB panel	Becton Dickinson		CLSI	2016-12-20T12:28:27Z
+	SAMN06015657	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	wound	PDT000173727.2	ciprofloxacin	resistant	==		6.0	KB panel	Becton Dickinson		CLSI	2016-12-20T12:28:28Z
+	SAMN04901640	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175355.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:51Z
+	SAMN04901642	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175357.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:52Z
+	SAMN04901632	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175358.2	ciprofloxacin	resistant	==	8.0					CLSI	2016-12-25T14:32:52Z
+	SAMN04901635	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175359.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:52Z
+	SAMN04901638	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175360.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:52Z
+	SAMN04901636	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175361.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:52Z
+	SAMN04901633	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175362.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:52Z
+	SAMN04901630	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175363.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:53Z
+	SAMN04901639	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000175364.2	ciprofloxacin	resistant	>	8.0					CLSI	2016-12-25T14:32:53Z
+	SAMN06311514	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	Bronchial alveolar lavage	PDT000186894.2	ciprofloxacin	resistant	==		6.0	KB panel	Becton Dickinson		CLSI	2017-02-14T12:38:41Z
+	SAMN07450855	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	bronchial alveolar lavage	PDT000231458.2	ciprofloxacin	resistant	==		15.0	KB panel	Becton Dickinson		CLSI	2017-08-07T14:40:33Z
+	SAMN04901620	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000292996.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-03-05T09:36:15Z
+	SAMN04901631	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000352616.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-07-16T09:11:18Z
+	SAMN09788319	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	bone	PDT000424944.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:03:24Z
+	SAMN09788322	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424945.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-12-25T01:03:38Z
+	SAMN09788315	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424946.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:03:29Z
+	SAMN09788318	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424947.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:03:34Z
+	SAMN09788320	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424948.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:03:50Z
+	SAMN09788325	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424949.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-12-25T01:03:44Z
+	SAMN09788323	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424950.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:03:48Z
+	SAMN09788327	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424951.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:03:55Z
+	SAMN09788329	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424952.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:01Z
+	SAMN09788328	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile tissue	PDT000424953.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:01Z
+	SAMN09788330	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424954.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:03Z
+	SAMN09788331	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile tissue	PDT000424955.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:12Z
+	SAMN09788332	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424956.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:10Z
+	SAMN09788333	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424957.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:04:07Z
+	SAMN09788334	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424958.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:27Z
+	SAMN09788337	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424959.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:13Z
+	SAMN09788336	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile tissue	PDT000424960.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:27Z
+	SAMN09788338	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424961.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:04:27Z
+	SAMN09788352	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424962.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:04:19Z
+	SAMN09788316	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424963.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:04:41Z
+	SAMN09788317	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424964.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:04:39Z
+	SAMN09788324	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	blood	PDT000424966.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:04:44Z
+	SAMN09788366	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424967.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:04:53Z
+	SAMN09788326	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424968.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:04:48Z
+	SAMN09788335	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile body fluid	PDT000424969.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-12-25T01:04:58Z
+	SAMN09788340	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424970.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:05:02Z
+	SAMN09788350	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424971.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:04:57Z
+	SAMN09788365	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424972.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:05:13Z
+	SAMN09788375	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile tissue	PDT000424973.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:05:07Z
+	SAMN09788357	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424974.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:05:18Z
+	SAMN09788339	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424975.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-12-25T01:05:37Z
+	SAMN09788343	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424976.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-12-25T01:05:47Z
+	SAMN09788344	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424978.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:05:46Z
+	SAMN09788354	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424979.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:05:49Z
+	SAMN09788356	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424980.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:05:51Z
+	SAMN09788359	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424981.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:05:53Z
+	SAMN09788363	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424982.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:05:57Z
+	SAMN09788364	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424983.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:01Z
+	SAMN09788360	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424984.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:06Z
+	SAMN09788414	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Afghanistan	groin	PDT000424985.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:09Z
+	SAMN09788367	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424986.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:07Z
+	SAMN09788368	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424987.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:09Z
+	SAMN09788370	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000424988.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:10Z
+	SAMN09788372	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000424989.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:19Z
+	SAMN09788371	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000424990.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:27Z
+	SAMN09788378	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424991.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:18Z
+	SAMN09788413	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000424992.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:24Z
+	SAMN09788382	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile tissue	PDT000424993.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:26Z
+	SAMN09788380	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424994.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:27Z
+	SAMN09788383	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424995.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:26Z
+	SAMN09788384	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424996.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:32Z
+	SAMN09788385	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000424997.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:33Z
+	SAMN09788388	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000424998.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:36Z
+	SAMN09788387	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000424999.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:06:35Z
+	SAMN09788390	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000425000.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:37Z
+	SAMN09788391	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425001.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:37Z
+	SAMN09788396	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000425002.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:44Z
+	SAMN09788393	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000425003.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:46Z
+	SAMN09788395	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425004.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:48Z
+	SAMN09788341	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT000425005.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:51Z
+	SAMN09788349	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425006.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:06:51Z
+	SAMN09788348	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000425007.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:51Z
+	SAMN09788353	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425008.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:06:57Z
+	SAMN09788355	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425009.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:06:54Z
+	SAMN09788369	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425010.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:07:02Z
+	SAMN09788358	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425011.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:02Z
+	SAMN09788376	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425012.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:07:05Z
+	SAMN09788379	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	blood	PDT000425013.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:01Z
+	SAMN09788389	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	ear	PDT000425014.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:07:07Z
+	SAMN09788381	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000425015.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:07:04Z
+	SAMN09788386	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000425016.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:08Z
+	SAMN09788397	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000425017.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:07:08Z
+	SAMN09788392	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425018.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:10Z
+	SAMN09788394	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000425019.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:13Z
+	SAMN09788398	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000425020.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:07:20Z
+	SAMN09788401	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Afghanistan	urine	PDT000425021.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:20Z
+	SAMN09788403	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425022.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-12-25T01:07:21Z
+	SAMN09788404	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000425023.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:07:20Z
+	SAMN09788347	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425024.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:21Z
+	SAMN09788407	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000425025.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:07:23Z
+	SAMN09788411	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000425026.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:07:21Z
+	SAMN09788412	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425027.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:30Z
+	SAMN09788402	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	blood	PDT000425029.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-12-25T01:07:32Z
+	SAMN09788400	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	groin	PDT000425030.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:34Z
+	SAMN09788410	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000425031.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:07:35Z
+	SAMN09788405	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425032.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:07:41Z
+	SAMN09788406	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000425033.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:08:15Z
+	SAMN09788408	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000425034.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-25T01:08:18Z
+	SAMN09788409	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000425035.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-25T01:08:21Z
+	SAMN09788342	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000430052.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-12-28T08:26:06Z
+	SAMN09788346	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT000430053.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-28T08:26:15Z
+	SAMN09788361	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT000430054.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-28T08:27:07Z
+	SAMN09788373	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile tissue	PDT000430055.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-28T08:27:14Z
+	SAMN09788362	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sterile tissue	PDT000430056.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-28T08:27:22Z
+	SAMN09788351	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000430057.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-28T08:27:28Z
+	SAMN09788374	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	respiratory	PDT000430058.1	ciprofloxacin	resistant	>	2.0					CLSI	2018-12-28T08:27:34Z
+	SAMN09788377	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	wound	PDT000430059.1	ciprofloxacin	susceptible	<=	0.5					CLSI	2018-12-28T08:27:40Z
+	SAMN29441995	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	blood	PDT001395184.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:29:20Z
+	SAMN29441937	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395243.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:40:24Z
+	SAMN29441888	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395291.2	ciprofloxacin	susceptible	==	1.0					CLSI	2022-08-19T09:52:27Z
+	SAMN29441865	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395367.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:05:48Z
+	SAMN29441840	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395392.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:10:48Z
+	SAMN29441821	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395412.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T10:13:42Z
+	SAMN36409445	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Greece	Bronchial secretions	PDT001823068.1	ciprofloxacin	resistant	>=	4.0		Vitek II	Biomérieux		EUCAST	2023-07-18T23:03:09Z
+	SAMN36409446	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Greece	catheter	PDT001823069.1	ciprofloxacin	resistant	>=	4.0		Vitek II	Biomérieux		EUCAST	2023-07-18T23:03:24Z
+	SAMN60257163	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	cerebrospinal fluid	PDT003226847.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:28:38Z
+	SAMN60257161	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226848.1	ciprofloxacin	resistant	==	2.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:29:12Z
+	SAMN60257148	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226849.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:30:24Z
+	SAMN60257162	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Abscess drainage	PDT003226850.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:30:32Z
+	SAMN60257160	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226851.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:30:39Z
+	SAMN60257164	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226852.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:30:50Z
+	SAMN60257159	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Abscess drainage	PDT003226853.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:30:58Z
+	SAMN60257156	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226854.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:32:17Z
+	SAMN60257155	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226855.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:32:26Z
+	SAMN60257154	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	urine	PDT003226856.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:32:35Z
+	SAMN60257157	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226857.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:33:22Z
+	SAMN60257151	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Surgical wound	PDT003226858.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:33:29Z
+	SAMN60257149	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226859.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:33:37Z
+	SAMN60257153	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Venous catheter tip	PDT003226860.1	ciprofloxacin	susceptible	==	0.5		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:34:20Z
+	SAMN60257152	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226861.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:35:21Z
+	SAMN60257147	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226862.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:35:27Z
+	SAMN60257146	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	blood	PDT003226863.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:35:34Z
+	SAMN60257158	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003226864.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-05-27T02:51:25Z
+	SAMN60257150	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico: Mexico City	Bronchial secretion	PDT003235711.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux	GM-NEG	CLSI	2026-06-01T00:07:18Z
+	SAMN07291537	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000311289.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-04-30T08:52:08Z
+	SAMN07291538	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000311291.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-04-30T09:02:13Z
+	SAMN07291535	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000311292.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-04-30T09:07:08Z
+	SAMN07291532	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000311293.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-04-30T09:20:09Z
+	SAMN07291533	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000311294.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-04-30T09:56:09Z
+	SAMN07291536	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000311295.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-04-30T10:01:06Z
+	SAMN07291539	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000326660.1	ciprofloxacin	resistant	==	4.0					CLSI	2018-06-06T07:52:10Z
+	SAMN07291540	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000336705.1	ciprofloxacin	susceptible	<=	0.25					CLSI	2018-06-22T17:03:44Z
+	SAMN07291553	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000343385.1	ciprofloxacin	resistant	==	8.0					CLSI	2018-07-05T07:51:08Z
+	SAMN07291551	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000343390.1	ciprofloxacin	susceptible	==	0.5					CLSI	2018-07-05T07:53:07Z
+	SAMN07291552	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000352612.1	ciprofloxacin	resistant	==	4.0					CLSI	2018-07-16T09:07:16Z
+	SAMN07291550	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000352613.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-07-16T09:08:08Z
+	SAMN07291549	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000352614.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-07-16T09:09:08Z
+	SAMN29442025	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395153.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:23:28Z
+	SAMN29442024	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395154.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:23:38Z
+	SAMN29442021	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395156.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:23:55Z
+	SAMN29442022	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	wound	PDT001395157.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:24:03Z
+	SAMN29442020	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395158.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:24:11Z
+	SAMN29442019	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	respiratory	PDT001395159.2	ciprofloxacin	resistant	>=	4.0					CLSI	2022-08-19T09:25:11Z
+	SAMN40277792	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Greece	wound	PDT002110214.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		EUCAST	2024-03-11T23:03:25Z
+	SAMN40282113	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Greece	sputum	PDT002110218.1	ciprofloxacin	resistant	==	1.0		Vitek	Biomérieux		EUCAST	2024-03-11T23:04:14Z
+	SAMN40282111	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Greece	Pus	PDT002110219.1	ciprofloxacin	intermediate	<=	0.25		Vitek	Biomérieux		EUCAST	2024-03-11T23:06:17Z
+	SAMN40282112	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Greece	Tissue	PDT002110220.1	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		EUCAST	2024-03-11T23:06:26Z
+	SAMN51434945	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Viet Nam	hospital	PDT003050304.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:38Z
+	SAMN51434944	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Viet Nam	hospital	PDT003050305.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:38Z
+	SAMN51434943	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Viet Nam	hospital	PDT003050306.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:39Z
+	SAMN51434941	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Serbia	hospital	PDT003050308.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:39Z
+	SAMN51434940	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Serbia	hospital	PDT003050309.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:39Z
+	SAMN51434939	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Colombia	hospital	PDT003050310.1	ciprofloxacin	resistant	==	0.5		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:39Z
+	SAMN51434938	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Lebanon	hospital	PDT003050311.1	ciprofloxacin	resistant	==	0.12		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:40Z
+	SAMN51434937	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Guatemala	hospital	PDT003050312.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:40Z
+	SAMN51434936	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050313.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:40Z
+	SAMN51434935	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050315.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:40Z
+	SAMN51434933	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Kenya	hospital	PDT003050317.1	ciprofloxacin	susceptible	==	1.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:41Z
+	SAMN51434932	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Kenya	hospital	PDT003050318.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:41Z
+	SAMN51434931	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Thailand	hospital	PDT003050319.1	ciprofloxacin	resistant	==	0.5		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:41Z
+	SAMN51434929	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Tunisia	hospital	PDT003050321.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:41Z
+	SAMN51434928	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Tunisia	hospital	PDT003050322.1	ciprofloxacin	resistant	==	0.25		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:41Z
+	SAMN51434927	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Ukraine	hospital	PDT003050323.1	ciprofloxacin	resistant	==	0.12		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:42Z
+	SAMN51434926	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Kazakhstan	hospital	PDT003050324.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:42Z
+	SAMN51434925	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Ecuador	hospital	PDT003050327.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:42Z
+	SAMN51434839	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Zambia	hospital	PDT003050349.1	ciprofloxacin	resistant	==	0.12		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:46Z
+	SAMN51434838	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050350.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:46Z
+	SAMN51434837	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050351.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:47Z
+	SAMN51434836	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050445.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:04Z
+	SAMN51434835	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050447.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:05Z
+	SAMN51434834	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050448.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:05Z
+	SAMN51434833	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050449.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:05Z
+	SAMN51434832	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050450.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:05Z
+	SAMN51434831	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050451.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:05Z
+	SAMN51434830	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050452.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:06Z
+	SAMN51434829	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050453.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:06Z
+	SAMN51434828	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050454.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:06Z
+	SAMN51434826	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050456.1	ciprofloxacin	resistant	==	0.25		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:06Z
+	SAMN51434825	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050459.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:07Z
+	SAMN51434822	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050462.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:07Z
+	SAMN51434821	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050463.1	ciprofloxacin	resistant	==	0.25		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:08Z
+	SAMN51434820	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050464.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:08Z
+	SAMN51434819	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050465.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:08Z
+	SAMN51434818	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050466.1	ciprofloxacin	resistant	==	0.25		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:08Z
+	SAMN51434817	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050467.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:08Z
+	SAMN51434816	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050468.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:09Z
+	SAMN51434924	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Ecuador	hospital	PDT003050565.1	ciprofloxacin	resistant	<	0.06		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:28Z
+	SAMN51434923	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	South Africa	hospital	PDT003050566.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:28Z
+	SAMN51434922	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Jordan	hospital	PDT003050567.1	ciprofloxacin	resistant	==	0.25		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:28Z
+	SAMN51434921	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Thailand	hospital	PDT003050568.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:28Z
+	SAMN51434920	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Thailand	hospital	PDT003050569.1	ciprofloxacin	resistant	==	0.5		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:29Z
+	SAMN51434919	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Morocco	hospital	PDT003050570.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:29Z
+	SAMN51434918	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Georgia	hospital	PDT003050571.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:29Z
+	SAMN51434917	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Ecuador	hospital	PDT003050572.1	ciprofloxacin	resistant	==	0.12		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:29Z
+	SAMN51434916	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico	hospital	PDT003050573.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:30Z
+	SAMN51434815	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Egypt	hospital	PDT003050590.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:33Z
+	SAMN51434814	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nepal	hospital	PDT003050591.1	ciprofloxacin	resistant	==	0.25		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:33Z
+	SAMN51434813	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Pakistan	hospital	PDT003050592.1	ciprofloxacin	resistant	==	0.25		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:33Z
+	SAMN51434812	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Brazil	hospital	PDT003050593.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:34Z
+	SAMN51434811	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Viet Nam	hospital	PDT003050594.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:34Z
+	SAMN51434810	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Viet Nam	hospital	PDT003050595.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:34Z
+	SAMN51434808	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	Brazil	soil	PDT003050597.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:34Z
+	SAMN51434807	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	Brazil	soil	PDT003050598.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:34Z
+	SAMN51434806	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	Brazil	soil	PDT003050599.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:35Z
+	SAMN04014944	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167132.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:03:53Z
+	SAMN04014933	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167133.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:03:59Z
+	SAMN04014941	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167135.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:06:18Z
+	SAMN07291503	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000292993.1	ciprofloxacin	susceptible	==	0.5					CLSI	2018-03-05T09:29:06Z
+	SAMN07291497	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000292994.1	ciprofloxacin	resistant	==	4.0					CLSI	2018-03-05T09:31:09Z
+	SAMN07291496	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000292995.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-03-05T09:34:16Z
+	SAMN07291500	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000292998.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-03-05T12:58:07Z
+	SAMN07291498	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000294805.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-03-14T19:09:06Z
+	SAMN07291502	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000294806.1	ciprofloxacin	resistant	==	8.0					CLSI	2018-03-14T19:14:06Z
+	SAMN07291501	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000294807.1	ciprofloxacin	susceptible	==	1.0					CLSI	2018-03-14T19:16:07Z
+	SAMN07291494	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000294808.1	ciprofloxacin	intermediate	==	2.0					CLSI	2018-03-14T19:19:16Z
+	SAMN07291495	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000352617.1	ciprofloxacin	resistant	==	8.0					CLSI	2018-07-16T09:12:25Z
+	SAMN11954027	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922961.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T18:17:19Z
+	SAMN11954025	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922975.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T19:17:02Z
+	SAMN11954024	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922976.2	ciprofloxacin	resistant	>	8.0					CLSI	2025-03-21T12:23:16Z
+	SAMN11954023	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922977.1	ciprofloxacin	resistant	==	8.0					CLSI	2020-12-24T19:17:03Z
+	SAMN11954021	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922978.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T19:17:03Z
+	SAMN11954026	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923003.1	ciprofloxacin	resistant	==	4.0					CLSI	2020-12-24T23:17:43Z
+	SAMN41558483	Pseudomonas aeruginosa	Pseudomonas aeruginosa	environmental/other	Canada:Ontario	Coconut meat [FOODON:00003856]; Ready-to-eat (RTE) [FOODON:03316636]; Food (chunks) [FOODON:00004555]; Food (frozen) [FOODON:03302148]; Retail environment [ENVO:01001448]	PDT002188881.1	ciprofloxacin	susceptible	==	0.12		Sensititre	Trek	96-Well Plate	CLSI	2024-06-05T12:03:52Z
+	SAMN51434942	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Jordan	hospital	PDT003050307.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:39Z
+	SAMN51434930	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Brazil	hospital	PDT003050320.1	ciprofloxacin	resistant	==	0.5		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:41Z
+	SAMN51434840	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Zambia	hospital	PDT003050348.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:36:46Z
+	SAMN51434827	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050455.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:06Z
+	SAMN51434824	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Nigeria	hospital	PDT003050460.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:07Z
+	SAMN51434809	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Viet Nam	hospital	PDT003050596.1	ciprofloxacin	susceptible	>	4.0		Vitek	Biomérieux		EUCAST	2026-01-10T12:37:34Z
+	SAMN17616831	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Texas	urine	PDT000967878.1	ciprofloxacin	resistant	>	2.0		Microscan	Beckman Coulter Inc		CLSI	2021-02-17T23:03:49Z
+	SAMN17616893	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Mexico		PDT001116470.1	ciprofloxacin	resistant	>	2.0		Microscan	Beckman Coulter Inc		CLSI	2021-08-24T16:31:25Z
+	SAMN31096620	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT001437348.1	ciprofloxacin	resistant	==	8.0				96-Well Plate	CLSI	2022-09-29T19:32:58Z
+	SAMN34104071	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	sputum	PDT001684051.2	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux	96-Well Plate	CLSI	2024-02-16T22:18:33Z
+	SAMN34104069	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA:Boston	tracheal aspirate	PDT001684053.2	ciprofloxacin	susceptible	<=	0.25		Vitek	Biomérieux	96-Well Plate	CLSI	2024-02-17T12:10:12Z
+	SAMN33329571	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Cleveland, Ohio	Left cornea scraping	PDT001778385.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-06-12T08:36:11Z
+	SAMN50502207	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT002875159.1	ciprofloxacin	resistant	>	8.0				96-Well Plate	CLSI	2025-08-10T06:32:01Z
+	SAMN28842373	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT001322233.1	ciprofloxacin	resistant	>	8.0				96-Well Plate	CLSI	2022-06-07T13:43:18Z
+	SAMN28842372	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT001322234.1	ciprofloxacin	resistant	>	8.0				96-Well Plate	CLSI	2022-06-07T13:43:19Z
+	SAMN28842371	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT001322235.1	ciprofloxacin	resistant	>	8.0				96-Well Plate	CLSI	2022-06-07T13:43:19Z
+	SAMN28842369	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT001322237.1	ciprofloxacin	resistant	>	8.0				96-Well Plate	CLSI	2022-06-07T13:43:20Z
+	SAMN29505234	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677703.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:55Z
+	SAMN29505233	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677704.1	ciprofloxacin	susceptible	<=	1.0					CLSI	2023-04-03T14:37:55Z
+	SAMN29505232	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677705.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:55Z
+	SAMN29505231	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677706.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:56Z
+	SAMN29505230	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677707.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:56Z
+	SAMN29505229	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677708.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:56Z
+	SAMN29505262	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677709.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:56Z
+	SAMN29505261	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677710.1	ciprofloxacin	susceptible	<=	1.0					CLSI	2023-04-03T14:37:56Z
+	SAMN29505260	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677711.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:56Z
+	SAMN29505259	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677712.1	ciprofloxacin	susceptible	<=	1.0					CLSI	2023-04-03T14:37:57Z
+	SAMN29505258	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677713.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:57Z
+	SAMN29505257	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677714.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:57Z
+	SAMN29505256	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677715.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:57Z
+	SAMN29505255	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677716.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:57Z
+	SAMN29505228	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677717.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:58Z
+	SAMN29505254	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677718.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:58Z
+	SAMN29505253	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677719.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:58Z
+	SAMN29505252	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677720.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:58Z
+	SAMN29505251	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677721.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:58Z
+	SAMN29505250	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677722.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:58Z
+	SAMN29505249	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677723.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:59Z
+	SAMN29505248	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677724.1	ciprofloxacin	susceptible	<=	1.0					CLSI	2023-04-03T14:37:59Z
+	SAMN29505247	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677725.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:59Z
+	SAMN29505246	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677726.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:59Z
+	SAMN29505245	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677727.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:37:59Z
+	SAMN29505227	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677728.1	ciprofloxacin	susceptible	<=	1.0					CLSI	2023-04-03T14:38:00Z
+	SAMN29505244	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677729.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:00Z
+	SAMN29505243	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677730.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:00Z
+	SAMN29505242	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677731.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:00Z
+	SAMN29505241	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677732.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:00Z
+	SAMN29505240	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677733.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:01Z
+	SAMN29505239	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677734.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:01Z
+	SAMN29505238	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677735.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:01Z
+	SAMN29505237	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677736.1	ciprofloxacin	susceptible	<=	1.0					CLSI	2023-04-03T14:38:01Z
+	SAMN29505236	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677737.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:01Z
+	SAMN29505235	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677738.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:02Z
+	SAMN29505226	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677739.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:02Z
+	SAMN29505225	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA: Rochester, MN	human infection	PDT001677740.1	ciprofloxacin	resistant	>	2.0					CLSI	2023-04-03T14:38:02Z
+	SAMN33435242	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	sputum	PDT001770849.1	ciprofloxacin	resistant	>	8.0				96-Well Plate	CLSI	2023-06-07T10:08:42Z
+	SAMN33435241	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	urine	PDT001770850.1	ciprofloxacin	resistant	>	8.0				96-Well Plate	CLSI	2023-06-07T10:08:42Z
+	SAMN03316899	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT000050775.2	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2015-05-05T18:02:35Z
+	SAMN04014895	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167137.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:08:21Z
+	SAMN04014905	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167138.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:08:28Z
+	SAMN03316899	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA		PDT000050775.2	ciprofloxacin	resistant	>	2.0		Microscan	Siemens		CLSI	2015-05-05T18:02:35Z
+	SAMN04014946	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167136.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:06:26Z
+	SAMN04014935	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167139.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:09:04Z
+	SAMN04014949	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000167140.1	ciprofloxacin	resistant	>	8.0					CLSI	2016-11-10T13:09:09Z
+	SAMN04014936	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000294804.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-03-14T18:16:52Z
+	SAMN04014951	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000331118.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-06-10T08:09:07Z
+	SAMN04014952	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000380983.1	ciprofloxacin	resistant	>	8.0					CLSI	2018-09-17T09:51:17Z
+	SAMN12288114	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Kazakhstan: Almaty	wound	PDT000551136.1	ciprofloxacin	intermediate	==		18.0	Scan 500	Interscience	Disk difussion method in Mueller-Hinton Agar	CLSI	2019-07-29T07:51:32Z
+	SAMN12288115	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Kazakhstan: Almaty	wound	PDT000551137.1	ciprofloxacin	susceptible	==		32.0	Scan 500	Interscience	Disk difussion method in Mueller-Hinton Agar	CLSI	2019-07-29T07:52:37Z
+	SAMN12288113	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Kazakhstan: Almaty	wound	PDT000551138.1	ciprofloxacin	susceptible	==		35.0	Scan 500	Interscience	Disk difussion method in Mueller-Hinton Agar	CLSI	2019-07-29T07:53:53Z
+	SAMN11953929	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923120.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:14Z
+	SAMN11953930	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923121.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:15Z
+	SAMN11953931	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923123.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:15Z
+	SAMN11953939	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923144.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:20Z
+	SAMN11953940	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923145.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:21Z
+	SAMN03316892	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Afghanistan	Surveillance swab	PDT000050773.2	ciprofloxacin	resistant	>	2.0		Microscan	Siemens		CLSI	2015-05-05T18:02:44Z
+	SAMN11954016	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922979.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T19:17:03Z
+	SAMN11954015	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922980.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T19:17:04Z
+	SAMN11954014	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000922981.1	ciprofloxacin	intermediate	==	2.0					CLSI	2020-12-24T19:17:04Z
+	SAMN11953812	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923014.1	ciprofloxacin	susceptible	==	0.5					CLSI	2020-12-24T23:17:46Z
+	SAMN11953813	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923015.1	ciprofloxacin	susceptible	<=	0.25					CLSI	2020-12-24T23:17:47Z
+	SAMN11953814	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923016.1	ciprofloxacin	susceptible	==	0.5					CLSI	2020-12-24T23:17:47Z
+	SAMN11953815	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923017.1	ciprofloxacin	intermediate	==	2.0					CLSI	2020-12-24T23:17:47Z
+	SAMN11953811	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923038.1	ciprofloxacin	susceptible	<=	0.25					CLSI	2020-12-24T23:17:53Z
+	SAMN11953816	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923039.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:17:53Z
+	SAMN11953817	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923040.1	ciprofloxacin	susceptible	==	1.0					CLSI	2020-12-24T23:17:53Z
+	SAMN11953818	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923041.1	ciprofloxacin	intermediate	==	2.0					CLSI	2020-12-24T23:17:54Z
+	SAMN11953819	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923042.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:17:54Z
+	SAMN11953820	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923043.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:17:54Z
+	SAMN11953954	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923174.1	ciprofloxacin	susceptible	<=	0.25					CLSI	2020-12-24T23:18:28Z
+	SAMN11953953	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923175.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:29Z
+	SAMN11953952	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923176.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:29Z
+	SAMN11953951	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923177.1	ciprofloxacin	resistant	==	4.0					CLSI	2020-12-24T23:18:29Z
+	SAMN11953972	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923181.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:30Z
+	SAMN11953971	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923182.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:31Z
+	SAMN11953970	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923183.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:31Z
+	SAMN11953969	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923184.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:31Z
+	SAMN11953961	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923193.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:33Z
+	SAMN11953959	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923195.1	ciprofloxacin	susceptible	<=	0.25					CLSI	2020-12-24T23:18:34Z
+	SAMN11953958	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923196.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:34Z
+	SAMN11953957	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923197.1	ciprofloxacin	susceptible	<=	0.25					CLSI	2020-12-24T23:18:34Z
+	SAMN11953956	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923198.1	ciprofloxacin	resistant	>	8.0					CLSI	2020-12-24T23:18:35Z
+	SAMN11953955	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical			PDT000923199.1	ciprofloxacin	intermediate	==	2.0					CLSI	2020-12-24T23:18:35Z
+	SAMN03316892	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Afghanistan	Surveillance swab	PDT000050773.2	ciprofloxacin	resistant	>=	4.0		Vitek	Biomérieux		CLSI	2015-05-05T18:02:44Z
+	SAMN07602569	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Sweden: Gothenburg	sputum	PDT000326681.1	ciprofloxacin	intermediate	==	1.0			Biomérieux	E-Test	EUCAST	2018-06-06T10:03:08Z
+	SAMN02673308	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	skin	PDT000034122.1	ciprofloxacin	susceptible	<=	1.0		Microscan	Siemens		CLSI	2014-06-20T14:01:22Z
+	SAMN03316892	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	Afghanistan	Surveillance swab	PDT000050773.2	ciprofloxacin	resistant	>	2.0		Phoenix	Becton Dickinson		CLSI	2015-05-05T18:02:44Z
+	SAMN02673308	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	skin	PDT000034122.1	ciprofloxacin	susceptible	==	1.0		Vitek	Biomérieux		CLSI	2014-06-20T14:01:22Z
+	SAMN02673308	Pseudomonas aeruginosa	Pseudomonas aeruginosa	clinical	USA	skin	PDT000034122.1	ciprofloxacin	intermediate	==	2.0		Phoenix	Becton Dickinson		CLSI	2014-06-20T14:01:22Z
