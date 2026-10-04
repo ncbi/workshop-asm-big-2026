@@ -32,6 +32,10 @@ For this exercise, use:
 
 Open the [NCBI Pathogen Detection homepage](https://www.ncbi.nlm.nih.gov/pathogens/) and search for `SAMN13001002`, or go directly to the [isolate search results](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#SAMN13001002).
 
+![Pathogen Detection search form with red arrows pointing to the BioSample accession and Search button.](../images/outbreak-01-search-annotated.png)
+
+*Enter the BioSample accession in **Search isolates**, then click **Search**. Screenshots in this exercise were captured on October 4, 2026; live results may change.*
+
 ### 2. Examine the search results
 
 Locate the **SNP cluster** and **Min-diff** fields for the isolate.
@@ -44,6 +48,10 @@ Cluster size describes how many isolates are grouped together; it does not, by i
 
 > Pathogen Detection is updated as data are added and reanalyzed. Cluster membership, sizes, and SNP distances may differ from the original workshop example.
 
+![Isolate search results with red arrows pointing to Total isolates, the SNP cluster accession, and Min-diff.](../images/outbreak-02-results-annotated.png)
+
+*Read **Total isolates** in the upper **Matched Clusters** table (80 here). In the lower **Matched Isolates** table, read **Min-diff** (3 here) and click the **SNP cluster** accession to open the tree.*
+
 ### 3. Explore the SNP cluster
 
 Click the isolate's **SNP cluster** accession (e.g., `PDS000011550.54`) directly in the search results table to open the tree in the SNP Tree Viewer. Clicking the accession link in the table is recommended because it dynamically resolves to the latest version of the tree and organism group.
@@ -55,6 +63,14 @@ Use the tree and metadata to investigate:
 - Can you find Canadian food isolates? What does their isolation source tell you?
 - How do the collection dates compare with the dates the records were created? These represent different events: sampling and entry into the database.
 - What hypothesis about the source of infection would you investigate next, and what additional evidence would you need?
+
+![SNP Tree Viewer with the Neighbors dialog open and SNP distance set to 10.](../images/outbreak-03-neighbors.jpg)
+
+*With the clinical isolate selected, click **Neighbors**, enter **10** in **SNP distance**, and click **Add**.*
+
+![SNP Tree Viewer showing selected-isolate distance statistics, sample labels, and the Watch button.](../images/outbreak-04-distances.jpg)
+
+*Inspect the distance summary on the left and the isolate labels in the tree. Here, the 10-SNP neighbor selection includes 53 isolates, and the summary reports distances among all selected isolates (0–17 SNPs), not just distances from the starting isolate. Look for Canadian isolates labeled **food**. The **Watch** button is used in the optional step below.*
 
 <details>
 <summary>Click to reveal discussion notes and answers</summary>
@@ -69,5 +85,3 @@ Use the tree and metadata to investigate:
 ### 4. Optional: follow new matches
 
 Sign in to My NCBI to **save a search** in the Isolates Browser or **watch selected isolates** in the SNP Tree Viewer. Saved searches notify you of new matching records; watches notify you of new isolates within a chosen SNP distance. See the [notification instructions](https://www.ncbi.nlm.nih.gov/pathogens/pathogens_help/#automated-searches) for details.
-
-
