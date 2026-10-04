@@ -30,11 +30,17 @@ For this exercise, use:
 
 ### 1. Find the isolate
 
-Open the [NCBI Pathogen Detection homepage](https://www.ncbi.nlm.nih.gov/pathogens/) and search for `SAMN13001002`, or go directly to the [isolate search results](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#SAMN13001002).
+Open the [NCBI Pathogen Detection homepage](https://www.ncbi.nlm.nih.gov/pathogens/). Under **Data Resources**, click **Isolates Browser**.
 
-![Pathogen Detection search form with red arrows pointing to the BioSample accession and Search button.](../images/outbreak-01-search-annotated.png)
+![NCBI Pathogen Detection Data Resources section with a red arrow pointing to the Isolates Browser link.](../images/outbreak-step-01a-isolates-browser-link-annotated.png)
 
-*Enter the BioSample accession in **Search isolates**, then click **Search**. Screenshots in this exercise were captured on October 4, 2026; live results may change.*
+*Click **Isolates Browser** under **Data Resources**.*
+
+Enter **`SAMN13001002`** in the search box and click the magnifying-glass search button, or go directly to the [isolate search results](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#SAMN13001002).
+
+![NCBI Isolates Browser with red arrows pointing to the BioSample accession and magnifying-glass search button.](../images/outbreak-step-01b-isolate-search-annotated.png)
+
+*Enter the BioSample accession in **Search**, then click the magnifying-glass button. Screenshots in this exercise were captured on October 4, 2026; live results may change.*
 
 ### 2. Examine the search results
 
@@ -44,7 +50,7 @@ Locate the **SNP cluster** and **Min-diff** fields for the isolate.
 - Check **Min-diff**. This is the smallest SNP distance to an isolate of a different isolation type within the cluster. For a clinical isolate, it describes the closest environmental/other match, which can include food isolates.
 - The original example showed a **Min-diff of 3**: a nonclinical isolate differed from the clinical isolate by only three SNPs. Inspect its metadata to find out where it came from.
 
-Cluster size describes how many isolates are grouped together; it does not, by itself, identify a food or environmental match. See the [Pathogen Detection help](https://www.ncbi.nlm.nih.gov/pathogens/pathogens_help/) for field definitions.
+Cluster size describes how many isolates are grouped together; it does not, by itself, identify a food or environmental match. See the [Pathogen Detection help](https://www.ncbi.nlm.nih.gov/pathogens/pathogens_help/#isolates-browser) for field definitions and more information.
 
 > Pathogen Detection is updated as data are added and reanalyzed. Cluster membership, sizes, and SNP distances may differ from the original workshop example.
 
@@ -62,7 +68,7 @@ Use the tree and metadata to investigate:
   > **Tip:** You can click the **Neighbors** button below the table and enter a SNP distance (e.g., 10) to automatically select closely related isolates, rather than clicking individual nodes in the tree.
 - Can you find Canadian food isolates? What does their isolation source tell you?
 - How do the collection dates compare with the dates the records were created? These represent different events: sampling and entry into the database.
-- What hypothesis about the source of infection would you investigate next, and what additional evidence would you need?
+- Note how different submitters include different amounts of detail in metadata.
 
 ![SNP Tree Viewer with the Neighbors dialog open and SNP distance set to 10.](../images/outbreak-03-neighbors.jpg)
 
