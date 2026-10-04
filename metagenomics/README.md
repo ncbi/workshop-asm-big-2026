@@ -40,9 +40,9 @@ Here, you will use three published plasmids as targets and two short-read metage
 3. **Assemble and compare sequences.** Run SAUTE and use BLAST to compare the assemblies with the plasmid targets.
 4. **Investigate resistance genes and related genomes.** Run AMRFinderPlus, search Pebblescout, and follow a match into Pathogen Detection.
 
-Use the [workshop Jupyter environment](https://jupyterhub01.ncbi.nlm.nih.gov/) for terminal commands and file viewing. See [software.md](software.md) for the programs needed. An NCBI account is needed for cross-browser selection in the final step. Downloads and assembly can take several minutes and require space for the reads and temporary files.
+Use the [workshop Jupyter environment](https://jupyterhub01.ncbi.nlm.nih.gov/) for terminal commands and file viewing. See [software.md](software.md) for the programs needed. An NCBI account is needed for cross-browser selection in the final step. Downloads and assembly can take several minutes. Allow at least 15 GB of free disk space for these exercises.
 
-> The sample outputs below come from the original workshop example. Software versions, database updates, and live browser results can change the exact counts and matches.
+> Software versions, database updates, and live browser results can change the exact counts and matches shown in the sample outputs below.
 
 ## Exercise: recover and investigate plasmid-associated sequences
 
@@ -256,14 +256,16 @@ seqkit fx2tab -l -n plasmids/*.fna
 <details>
 <summary>Example assembly results</summary>
 
+These results were generated with SAUTE 1.3.0 in the `jupyterhub01` workshop environment on October 2, 2026.
+
 | Assembly file | Number of sequences | Total length (bp) |
 | --- | ---: | ---: |
-| `ERR3209766.p_1687.all.fa` | 2 | 188,008 |
+| `ERR3209766.p_1687.all.fa` | 2 | 188,019 |
 | `ERR3209766.p_3128.all.fa` | 0 | 0 |
-| `ERR3209766.p_83.all.fa` | 3 | 104,416 |
-| `ERR3209768.p_1687.all.fa` | 3 | 182,728 |
+| `ERR3209766.p_83.all.fa` | 3 | 104,427 |
+| `ERR3209768.p_1687.all.fa` | 3 | 184,037 |
 | `ERR3209768.p_3128.all.fa` | 0 | 0 |
-| `ERR3209768.p_83.all.fa` | 3 | 181,592 |
+| `ERR3209768.p_83.all.fa` | 3 | 181,725 |
 
 The target lengths in the original example were 195,980 bp for `p_1687`, 145,343 bp for `p_83`, and 227,286 bp for `p_3128`. An empty output means no sequence was reported under these settings; it does not prove the plasmid is absent from the sample. Some SeqKit versions may report an error for an empty FASTA file; inspect the nonempty files individually if needed.
 
@@ -340,8 +342,8 @@ Use the BLAST alignments and AMRFinderPlus match evidence together. Gene detecti
 1. Open Pebblescout and click **Choose File**.
 2. Select the downloaded `ERR3209768.p_1687.all.fa` file.
 3. Select the **WGS, Volume 1** index used in the original exercise, if available. If the available indexes have changed, select an appropriate WGS assembly index and record its name.
-4. Submit the search and open its results using **View** when available.
-5. Examine **%coverage** and **PBScore**, then follow BioSample links for several strong matches.
+4. Click **View** to submit the search and display the results.
+5. Examine **%coverage** and **PBSscore**, then follow BioSample links for several strong matches.
 
 These scores summarize sequence matches in the selected index; they are not BLAST percent identity. Consult the [Pebblescout introduction](https://ncbiinsights.ncbi.nlm.nih.gov/2023/09/14/introducing-pebblescout/) for the search approach.
 
@@ -362,7 +364,7 @@ Inspect the **Location**, **AMR genotypes**, and **SNP cluster** fields. The ori
 
 Sign in to NCBI, click **Cross-browser selection**, and choose **Show in MicroBIGG-E**. Alternatively, search for the BioSample directly in [MicroBIGG-E](https://www.ncbi.nlm.nih.gov/pathogens/microbigge/#SAMN16824518).
 
-Sort by **Contig id** and compare the resistance elements with your AMRFinderPlus results. Finding genes together on a contig adds information about their genomic context, although a shared gene list alone does not prove that two sequences represent the same plasmid.
+Sort by **Contig** and compare the resistance elements with your AMRFinderPlus results. Finding genes together on a contig adds information about their genomic context, although a shared gene list alone does not prove that two sequences represent the same plasmid.
 
 - Which resistance genes are shared with your reconstructed sequences?
 - Are they located together on a contig in the matching assembly?
