@@ -40,7 +40,7 @@ Here, you will use three published plasmids as targets and two short-read metage
 3. **Assemble and compare sequences.** Run SAUTE and use BLAST to compare the assemblies with the plasmid targets.
 4. **Investigate resistance genes and related genomes.** Run AMRFinderPlus, search Pebblescout, and follow a match into Pathogen Detection.
 
-Use the [workshop Jupyter environment](https://jupyterhub01.ncbi.nlm.nih.gov/) for terminal commands and file viewing. See [software.md](software.md) for the programs needed. An NCBI account is needed for cross-browser selection in the final step. Downloads and assembly can take several minutes. Allow at least 15 GB of free disk space for these exercises.
+Use the workshop Jupyter environment for terminal commands and file viewing. See [software.md](software.md) for the programs needed. An NCBI account is needed for cross-browser selection in the final step. Downloads and assembly can take several minutes. Allow at least 15 GB of free disk space for these exercises.
 
 > Software versions, database updates, and live browser results can change the exact counts and matches shown in the sample outputs below.
 

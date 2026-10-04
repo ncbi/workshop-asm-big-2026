@@ -192,7 +192,7 @@ Keep the default columns as well as **Hierarchy node ID**: the script relies on 
 
 #### 8. Upload the data to Jupyter
 
-Open the [workshop Jupyter environment](https://jupyterhub01.ncbi.nlm.nih.gov/). Navigate to your working directory and use the upload button to upload `asts.tsv` and `microbigge.tsv`.
+Open the workshop Jupyter environment. Navigate to your working directory and use the upload button to upload `asts.tsv` and `microbigge.tsv`.
 
 ![Jupyter upload button](https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/main/images/amr10-jupyter_upload_button.png)
 
@@ -247,7 +247,7 @@ Pathogen Detection analyzes selected organism groups, but you can run AMRFinderP
 
 ### 1. Open a terminal and create a project directory
 
-Open the [workshop Jupyter environment](https://jupyterhub01.ncbi.nlm.nih.gov/). Use the terminal from Exercise 2, or click **+** to open a Launcher and select **Terminal**. AMRFinderPlus and its database are already installed.
+Open the workshop Jupyter environment. Use the terminal from Exercise 2, or click **+** to open a Launcher and select **Terminal**. AMRFinderPlus and its database are already installed.
 
 Run the following commands one line at a time, pressing **Enter** after each:
 
