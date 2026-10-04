@@ -188,6 +188,8 @@ Keep the default columns as well as **Hierarchy node ID**: the script relies on 
 
 [AMRgen](https://amrgen.org/) provides tools for combining resistance genotypes with susceptibility data and visualizing their relationships. The supplied `compare_amr.R` script imports the two tables and compares quinolone-associated markers with ciprofloxacin phenotypes, using BioSample identifiers to connect the data.
 
+> **Which isolates are compared?** The comparison includes only isolates whose BioSample identifiers appear in both the AST table and the filtered MicroBIGG-E table. Because you filtered MicroBIGG-E for quinolone-associated AMR elements, isolates with no reported elements matching those filters are excluded, as are isolates without available MicroBIGG-E results. The plot therefore describes the subset with downloaded quinolone-associated AMR elements, rather than all isolates in the AST table. Excluded isolates should not be assumed to be susceptible.
+
 #### 8. Upload the data to Jupyter
 
 Open the [workshop Jupyter environment](https://jupyterhub01.ncbi.nlm.nih.gov/). Navigate to your working directory and use the upload button to upload `asts.tsv` and `microbigge.tsv`.

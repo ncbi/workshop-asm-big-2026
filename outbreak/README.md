@@ -46,17 +46,28 @@ Cluster size describes how many isolates are grouped together; it does not, by i
 
 ### 3. Explore the SNP cluster
 
-Click the isolate's **SNP cluster** accession to open the tree. You can also open the [cluster version used in this exercise](https://www.ncbi.nlm.nih.gov/pathogens/tree/#Listeria/PDG000000001.4723/PDS000011550.54?accessions=PDT000603604.1).
+Click the isolate's **SNP cluster** accession (e.g., `PDS000011550.54`) directly in the search results table to open the tree in the SNP Tree Viewer. Clicking the accession link in the table is recommended because it dynamically resolves to the latest version of the tree and organism group.
 
 Use the tree and metadata to investigate:
 
 - Which isolates are closest to the clinical isolate? Select multiple nodes to inspect their SNP distances in the left panel.
+  > **Tip:** You can click the **Neighbors** button below the table and enter a SNP distance (e.g., 10) to automatically select closely related isolates, rather than clicking individual nodes in the tree.
 - Can you find Canadian food isolates? What does their isolation source tell you?
 - How do the collection dates compare with the dates the records were created? These represent different events: sampling and entry into the database.
 - What hypothesis about the source of infection would you investigate next, and what additional evidence would you need?
 
+<details>
+<summary>Click to reveal discussion notes and answers</summary>
+
+- **Closest isolates and SNP distances:** Selecting the clinical isolate and neighboring isolates reveals that several environmental and clinical isolates differ by only 1 to 4 SNPs, indicating a very tight clonal cluster.
+- **Canadian food isolates:** Several isolates (such as `CFIAFB20200088` and `CFIAFB20200080`) submitted by the Canadian Food Inspection Agency (CFIA) list the isolation source simply as `food`. Subsequent US FDA isolates explicitly specify `enoki mushroom` or `fresh enoki mushroom`, demonstrating how metadata terminology can differ between agencies during surveillance.
+- **Collection vs. creation dates:** Canadian isolates sampled in 2016 and 2019 were entered into the database in early 2020. The collection date reflects when the physical sample was obtained, while the creation date reflects when sequence data were uploaded. Depositing older surveillance sequences in 2020 provided the breakthrough match needed to connect ongoing 2016–2020 clinical cases in the United States and Canada.
+- **Investigative hypothesis and additional evidence:** The primary hypothesis is that clinical illnesses were caused by consumption of contaminated enoki mushrooms distributed through commercial supply chains linked to the common suppliers identified by CFIA and FDA traceback. To confirm this, investigators required patient exposure questionnaires confirming enoki mushroom consumption, supply chain traceback connecting retail purchases to specific mushroom farms, and confirmatory environmental swab cultures from the production and packaging facilities.
+
+</details>
+
 ### 4. Optional: follow new matches
 
-Sign in to My NCBI to **save a search** in the Isolates Browser or **watch selected isolates** in the SNP Tree Viewer. Saved searches notify you of new matching records; watches notify you of new isolates within a chosen SNP distance. See the [notification instructions](https://www.ncbi.nlm.nih.gov/pathogens/pathogens_help/) for details.
+Sign in to My NCBI to **save a search** in the Isolates Browser or **watch selected isolates** in the SNP Tree Viewer. Saved searches notify you of new matching records; watches notify you of new isolates within a chosen SNP distance. See the [notification instructions](https://www.ncbi.nlm.nih.gov/pathogens/pathogens_help/#automated-searches) for details.
 
 
