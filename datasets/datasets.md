@@ -1,7 +1,7 @@
 # Retrieving Genomic Data and Metadata Using the NCBI Datasets Command-Line Tool
 
 
-## NCBI Datasets: an overview 
+## 1. NCBI Datasets: an overview 
 
 [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/) is a resource that allows users to download data and metadata from [API](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/reference-docs/rest-api/), [web](https://www.ncbi.nlm.nih.gov/datasets/) and [command-line tool](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/). In this workshop, we will be focusing on the command-line tool, its structure and organization.
 
@@ -10,7 +10,7 @@
 </div>
 
 
-### Command-line tools: *datasets* and *dataformat*
+**Command-line tools: *datasets* and *dataformat***
 
 While the web interface is helpful, there are times when it's more convenient to access genomes through a command-line environment. For example, let's say you are working on your institution's high-performance computing (HPC) system and you need to download dozens (or hundreds of genomes). Even if you're using the Datasets web interface, this would potentially be a two step process: 
 
@@ -36,14 +36,14 @@ The NCBI Datasets CLI command structure is very intuitive. If you take a look at
 In addition to *datasets*, we also have *dataformat*, a companion tool to explore and convert metadata to TSV or Excel formats. We will cover the *dataformat* command syntax and use in the metadata metadata section below.
 
 
-### Retrieving bacterial data and metadata using *datasets*
+## 2. Retrieving bacterial data and metadata using *datasets*
 
 Bacteria is the taxonomic group with the largest number of available genomes - no surprises here. Currently there are 3.13 million bacterial genomes (on 05/26/2026), with *Salmonella* being the most represented taxon (> 618,000 genome sequences).  
 
 As expected, retrieving such a large number of genome sequences is a challenging task. In this workshop, we will show some strategies to potentially improve your download experience and data retrieval from NCBI using *datasets*. 
 
 
-#### Downloading a "small" genome data package
+### 2.1. Downloading a "small" genome data package
  
 Small and large are very relative terms. When thinking about genome projects, that answer also can vary depending on the taxon in question. For vertebrates, genome sizes varies tremendously (more than 200 times), from around 400 million base pairs (Mb) in the fugu (*Tetraodon nigroviridis*) to almost 90 billion base pairs (Gb) in the South American Lungfish (*Lepidosiren paradoxa*). In Bacteria, genome sizes also vary significantly, from around 0.1 Mb in *Candidatus* Nasuia deltocephalinicola                                                                                                                                                                                                                                                                                                                                                                                               to 15 Mb in *Streptomyces prasinosporus*. 
 
@@ -140,7 +140,7 @@ cat taxid.txt
 datasets summary genome taxon --inputfile taxid.txt
 ```
 
-#### Downloading a big genome data package
+### 2.2. Downloading a big genome data package
 
 Now let's say that you actually need to download all *Salmonella* genome sequences, which amounts to more than half million sequences. Or maybe something smaller, like *Salmonella enterica* subsp. *diarizonae*, which has almost 1,000 genomes. You *can* download it directly, but that's not our recommendation. The *datasets* CLI has the option of downloading *dehydrated* genome packages.  
 
@@ -289,7 +289,7 @@ data/GCA_003879695.1/genomic.gff
 ---
 
 
-#### Retrieving and filtering metadata information
+### 2.3. Retrieving and filtering metadata information
 
 Back to the *Salmonella bongori* genome data package we downloaded: in addition to the sequence and annotation data, NCBI Datasets **always** includes metadata reports with the data packages. Each data package type (genome, gene, virus, taxonomy) will have a specific data report in JSON or JSON-Lines format. 
 
@@ -423,7 +423,7 @@ dataformat tsv genome --inputfile sbongori/ncbi_dataset/data/assembly_data_repor
 
 ---
 
-### Retrieving Virus information using NCBI Datasets
+## 3. Retrieving Virus information using NCBI Datasets
 
 Users can retrieve viral genome sequences and metadata using the Virus service from NCBI Datasets CLI. 
 
@@ -437,7 +437,7 @@ The data available through the Datasets Virus and Genome endpoints originate fro
 - Use the Virus endpoint to access all available virus sequences including complete and partial ones; 
 
 
-#### Special virus cases: cache packages for SARS-CoV-2 and Influenza
+### 3.1. Special virus cases: cache packages for SARS-CoV-2 and Influenza
 
 For both SARS-CoV-2 and (Alpha)Influenza, NCBI Datasets CLI provides a cache package. A cache package is pre-packaged with all genomes available for those two taxa. 
 
@@ -496,7 +496,7 @@ Global Flags
 
 
 
-#### Retrieving genome information for Dengue virus
+### 3.2. Retrieving genome information for Dengue virus
 
 In this exercise, we will take a look at the genomes available for the Dengue virus. 
 
@@ -514,7 +514,7 @@ datasets download virus genome taxon 12637 --filename dengue-all.zip
 datasets download virus genome taxon 12637 --refseq --filename dengue-all-ref.zip
 ```
 
-#### Filtering based on metadata information
+### 3.3. Filtering based on metadata information
 
 - Look at the first record and all the fields with `jq`
 
@@ -550,7 +550,7 @@ datasets summary virus genome taxon 12637 --usa-state FL | jq .total_count
 
 
 ----
-### Important resources
+## 4. Important resources
 
 - ASM-BIG Github (for the CLI tutorial): [https://github.com/ncbi/workshop-asm-big-2026](https://github.com/ncbi/workshop-asm-big-2026)
 
