@@ -72,8 +72,9 @@ unzip 54736.zip -d sbongori
 ```
 tree sbongori/
 ```
+---
 
-##### Other ways to retrieve genome data:
+**Other ways to retrieve genome data:**
 
 1\. Single accession 
 
@@ -145,7 +146,7 @@ Now let's say that you actually need to download all *Salmonella* genome sequenc
 
 A dehydrated package doesn't include any data. It has a file (`fetch.txt`) that holds the location information of the requested data files. To retrieve those files, the option *rehydrate* is invoked on the CLI and the files are retrieved. 
 
-##### Advantages of rehydration:
+**Advantages of rehydration:**
 
 * It's faster than a regular download (it doesn't look like much in this case, but when you're dealing with 500x more sequences, that makes a difference)
 
@@ -335,7 +336,7 @@ datasets summary genome taxon "salmonella bongori"  --reference | jq .
 ```
 
 
-##### Extracting specific metadata fields from the reports
+**Extracting specific metadata fields from the reports**
 
 Sometimes, we are interested in only a specific piece of metadata information about the species we are studying. For example, if we want to generate a table with only the CheckM quality scores for all samples available for that species, we could use the *dataformat* CLI. *dataformat* has specific schemas for each type of metadata reports, and can be used to convert JSON-Lines to TSV or excel formats.
 
@@ -390,7 +391,7 @@ dataformat tsv genome \
 --fields accession,ani-best-ani-match-organism,assmstats-scaffold-n50,checkm-completeness,checkm-contamination > sbongori_stats.tsv
 ```
 
-##### Exercise
+**Exercise**
 
 Could you generate the same output we did using the `summary` command by using the  *Salmonella bongori* genome data package instead?
 
@@ -426,11 +427,11 @@ dataformat tsv genome --inputfile sbongori/ncbi_dataset/data/assembly_data_repor
 
 Users can retrieve viral genome sequences and metadata using the Virus service from NCBI Datasets CLI. 
 
-#### What's the difference between the Virus and Genome endpoints in Datasets?
+**What's the difference between the Virus and Genome endpoints in Datasets?**
 
 The data available through the Datasets Virus and Genome endpoints originate from **GenBank** but combine data from distinct selection and curation processes. Virus data is sourced from NCBI Virus, which employs both manual and automated curation processes to normalize every viral sequence provided by the International Nucleotide Sequence Database Collaboration (INSDC) and to standardize metadata. NCBI Datasets Genome endpoint provides access to **RefSeqs and Assemblies**, including a subset of virus sequences, which have been designated as RefSeqs or genome groups for segmented viruses, represented as NCBI Assemblies with accessions GCF\_/GCA\_, respectively.
 
-##### What does it mean for those working on viruses?
+**What does it mean for those working on viruses?**
 
 - Data packages downloaded from Virus endpoint will be different from those downloaded from the Genome endpoint;
 - Use the Virus endpoint to access all available virus sequences including complete and partial ones; 
@@ -495,7 +496,7 @@ Global Flags
 
 
 
-### Retrieving genome information for Dengue virus
+#### Retrieving genome information for Dengue virus
 
 In this exercise, we will take a look at the genomes available for the Dengue virus. 
 
@@ -513,7 +514,7 @@ datasets download virus genome taxon 12637 --filename dengue-all.zip
 datasets download virus genome taxon 12637 --refseq --filename dengue-all-ref.zip
 ```
 
-#### Filtering download based on metadata information
+#### Filtering based on metadata information
 
 - Look at the first record and all the fields with `jq`
 
