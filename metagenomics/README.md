@@ -64,7 +64,7 @@ For commands spanning several lines, copy and paste the entire block. A trailing
 
 #### 2. Download published plasmid assemblies and metadata
 
-Download the assembly file from the study's data collection:
+Download the assembly file from the study's data collection. They have supplementary data on figshare:
 
 ```bash
 wget -O contigs.fa.gz https://ndownloader.figshare.com/files/21229998

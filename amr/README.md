@@ -1,5 +1,11 @@
 # Antibiotic resistance: exploring resistance genes and comparing phenotypes
 
+## Contents
+
+- [Exercise 1: explore carbapenem resistance in eye-drop isolates](#exercise-1-explore-carbapenem-resistance-in-eye-drop-isolates)
+- [Exercise 2: compare ciprofloxacin genotypes and phenotypes](#exercise-2-compare-ciprofloxacin-genotypes-and-phenotypes)
+- [Exercise 3: run AMRFinderPlus on a Staphylococcus epidermidis genome](#exercise-3-run-amrfinderplus-on-a-staphylococcus-epidermidis-genome)
+
 Explore antimicrobial resistance in _Pseudomonas aeruginosa_ using NCBI Pathogen Detection. First, investigate carbapenem resistance genes in isolates associated with contaminated eye drops. Then, compare quinolone-associated AMRFinderPlus results with laboratory ciprofloxacin antibiotic susceptibility test (AST) results. Finally, download a _Staphylococcus epidermidis_ genome and run AMRFinderPlus yourself.
 
 ## Background: AMRFinderPlus and Pathogen Detection AMR resources
@@ -35,23 +41,23 @@ Carbapenem-resistant _Pseudomonas aeruginosa_ (CRPA) was associated with the [20
 
 ### 1. Sign in and search the Isolates Browser
 
-Open the [Isolates Browser](https://www.ncbi.nlm.nih.gov/pathogens/isolates/) and click **Log in** in the upper-right corner. Sign in to your NCBI account, or create an account if needed.
+Open the [Isolates Browser](https://www.ncbi.nlm.nih.gov/pathogens/isolates/). If you're not already logged in, click **Log in** in the upper-right corner. Sign in to your NCBI account, or create an account if needed.
 
 Enter this query in the search bar:
 
 ```text
-blaVIM AND taxgroup_name:Pseudo* AND lubricant eye drop
+taxgroup_name:Pseudo* AND lubricant eye drop
 ```
 
-You can also [open the search results](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#blaVIM%20AND%20taxgroup_name%3APseudo%2A%20AND%20lubricant%20eye%20drop). The query combines a VIM gene-family term, a wildcard organism-group search, and terms describing the eye-drop source. Because `Pseudo*` is a wildcard, results can include other _Pseudomonas_ groups, such as _P. putida_, as well as _P. aeruginosa_.
+You can also use this [direct link](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#blaVIM%20AND%20taxgroup_name%3APseudo%2A%20AND%20lubricant%20eye%20drop). The query combines a VIM gene-family term, a wildcard organism-group search, and terms describing the eye-drop source. Because `Pseudo*` is a wildcard, results can include other _Pseudomonas_ groups, such as _P. putida_, as well as _P. aeruginosa_.
+
+Note that we use a number of features of the query language here. Multiple search terms combined with `AND` (capitalization is important). Field names (`taxgroup_name:`) with a wildcard (`taxgroup_name:Pseudo*`). And multiple search terms implicitly OR'd together (`lubricant eye drop` is the equivalent of `lubricant OR eye OR drop`).
 
 ![Step 1: Isolates Browser search results for VIM genes and lubricant eye drops](../images/amr-exercise-1-step-01-isolate-search-annotated.png)
 
 ### 2. Inspect a matching isolate
 
-Choose one matching record to inspect. Look at its **Isolation source** and **AMR genotypes** fields: how does the source relate to the eye-drop investigation, and which resistance markers are reported? If needed, use **Choose columns** to display these fields.
-
-Keep the full set of search results for the next step. You will transfer all matching isolates, not just the record you inspected.
+Choose one matching record to inspect. Look at its **Isolation source** and **AMR genotypes** fields: Which resistance markers are reported? If needed, use **Choose columns** to display these fields.
 
 > Search results can change as data are added or updated. Use the available records rather than expecting a fixed number of isolates.
 
@@ -59,7 +65,7 @@ Keep the full set of search results for the next step. You will transfer all mat
 
 Click **Cross-browser selection**, then confirm that all matching isolates remain selected. All search results are selected by default; do not limit the selection to the single record you inspected.
 
-Choose **Show in MicroBIGG-E**. A new tab opens with available AMRFinderPlus results for the selected isolates. Each row represents a detected genetic element rather than an isolate, so an isolate can contribute multiple rows. See the [NCBI browser help](https://www.ncbi.nlm.nih.gov/pathogens/pathogens_help/) for details about cross-browser selection and filters.
+Choose **Show in MicroBIGG-E**. A new tab opens with *all* available AMRFinderPlus results for the selected isolates. Each row represents a detected genetic element rather than an isolate, so an isolate can contribute multiple rows. See the [NCBI browser help](https://www.ncbi.nlm.nih.gov/pathogens/pathogens_help/) for details about cross-browser selection and filters.
 
 ![Step 3: Matching isolates selected for Show in MicroBIGG-E](../images/amr-exercise-1-step-03-cross-browser-selection-annotated.png)
 
@@ -78,9 +84,7 @@ Keep the transferred isolate selection active while applying this filter. The ta
 
 ### 5. Discover the VIM allele
 
-With the **CARBAPENEM** filter still active, open the **Element symbol** filter. Inspect the available symbols and identify the VIM allele. Select that symbol to display its matching rows in the table, then examine the **Element symbol** and **Element name** annotations.
-
-![Step 5: CARBAPENEM and the discovered VIM allele selected in MicroBIGG-E](../images/amr-exercise-1-step-05-element-symbol-annotated.png)
+Look down at the results table. What allele do you see in the **Element symbol** field? With the **CARBAPENEM** filter still active, you can also open the **Element symbol** filter. Inspect the available symbols and identify the VIM allele.
 
 ### 6. Interpret the results
 
@@ -92,7 +96,7 @@ With the **CARBAPENEM** filter still active, open the **Element symbol** filter.
 
 The expected allele for this outbreak example is **`blaVIM-80`**, which encodes a VIM-family metallo-beta-lactamase. Its **CARBAPENEM** annotation identifies it as a resistance determinant associated with that antibiotic subclass.
 
-This is a sequence-based annotation, not a measured susceptibility result for the isolate. AST measures the isolate's response to an antibiotic under laboratory conditions. Exercise 2 explores how genotype annotations and measured phenotypes relate to one another.
+> This is a sequence-based annotation, not a measured susceptibility result for the isolate. AST measures the isolate's response to an antibiotic under laboratory conditions. Exercise 2 explores how genotype annotations and measured phenotypes relate to one another.
 
 The expected allele reflects the documented outbreak; the records and filter choices available in the live browsers may change.
 
@@ -100,11 +104,13 @@ The expected allele reflects the documented outbreak; the records and filter cho
 
 ## Exercise 2: compare ciprofloxacin genotypes and phenotypes
 
+In this exercise we're going to examine the phenotypic effect of fluoroquinolone resistance elements on ciprofloxacin antibiotic susceptibility tests (AST) in _Pseudomonas aeruginosa_ using the [AMRgen R package](https://amrgen.org/) from the [ESGEM-AMR working group](https://esgem-amr.amrrules.org/).
+
 ### Part 1: download phenotype data
 
 #### 1. Sign in and open the AST Browser
 
-Go to the [Pathogen Detection homepage](https://www.ncbi.nlm.nih.gov/pathogens/) and click **Log in** in the upper-right corner. Sign in to your NCBI account, or create an account if needed.
+If you're not already logged in, go to the [Pathogen Detection homepage](https://www.ncbi.nlm.nih.gov/pathogens/) and click **Log in** in the upper-right corner. Sign in to your NCBI account, or create an account if needed.
 
 Open the [Antibiotic Susceptibility Test (AST) Browser](https://www.ncbi.nlm.nih.gov/pathogens/ast/).
 
@@ -196,9 +202,7 @@ Open the workshop Jupyter environment. Navigate to your working directory and us
 
 ![Jupyter upload button](https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/main/images/amr10-jupyter_upload_button.png)
 
-Also place the supplied [compare_amr.R](compare_amr.R) script in that directory. If you are using a checkout of this repository in Jupyter, the script is already in the `amr` directory; upload your tables there.
-
-#### 9. Open a terminal and run the script
+#### 9. Open a terminal 
 
 In Jupyter, click **+** to open a Launcher, then select **Terminal**. A terminal lets you run programs by typing commands. Its **working directory** is the folder where commands look for input files and save output files.
 
@@ -212,6 +216,18 @@ ls
 ```
 
 `pwd` prints the working directory's path; `ls` lists its files. Make sure you see `compare_amr.R`, `asts.tsv`, and `microbigge.tsv`. If they are in another folder, use `cd` (change directory) followed by that folder's path. For example, if your working directory is the repository's top-level folder, run `cd amr`. Then run `ls` again.
+
+#### 10. Upload the analysis script
+
+Also place the supplied [compare_amr.R](compare_amr.R) script in that directory. If you are using a checkout of this repository in Jupyter, the script should already be in the `amr` directory; upload your tables there.
+
+Or run the following to download it from the GitHub site:
+
+```
+curl -fsSLO https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/edits/amr/compare_amr.R
+```
+
+#### 11. Run the analysis script
 
 Copy and paste the entire command below, then press **Enter**. A backslash (`\`) at the end of a line continues the same command on the next line; keep it as the last character on that line, with no spaces after it. Wait for the terminal prompt to return before entering another command.
 
@@ -228,7 +244,7 @@ The script requires R and the `optparse`, `dplyr`, `AMRgen`, `AMR`, and `ggplot2
 
 > **If something goes wrong:** For a missing-file error, run `pwd` and `ls` to check that you are in the folder containing all three files and that their names match the command. If the terminal shows a `>` continuation prompt after a partial paste, press **Ctrl+C** and paste the complete command again. If `Rscript` is not found, confirm that you are in the workshop Jupyter terminal and ask an instructor for help.
 
-#### 10. Inspect the plot
+#### 12. Inspect the plot
 
 Open the generated `Rplots.pdf` in Jupyter. Compare it with the [example plot](https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/main/images/Rplots.pdf); your results may differ as the underlying data change.
 
@@ -241,7 +257,7 @@ The UpSet plot summarizes combinations of resistance markers and their associate
 
 A minimum inhibitory concentration is the lowest tested antibiotic concentration that inhibits visible growth. Interpret the plot in the context of the available measurements, the selected interpretation standard, and the resistance mechanisms represented in the genotype data.
 
-## Final project: run AMRFinderPlus on a Staphylococcus epidermidis genome
+## Exercise 3: run AMRFinderPlus on a Staphylococcus epidermidis genome
 
 Pathogen Detection analyzes selected organism groups, but you can run AMRFinderPlus yourself on other assembled genomes. In this project, you will analyze a _Staphylococcus epidermidis_ genome, which is not currently included among the [Pathogen Detection organism groups with results](https://ftp.ncbi.nlm.nih.gov/pathogen/Results/). You will download the RefSeq assembly [GCF_019329745.1](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_019329745.1/) (strain B1276912) and its annotations, run AMRFinderPlus, and locate an aminoglycoside resistance gene. The main goal is to learn the workflow for analyzing a genome yourself.
 
