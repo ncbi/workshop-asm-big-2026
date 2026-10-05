@@ -565,7 +565,7 @@ datasets summary virus genome taxon 12637 --usa-state FL | jq .total_count
 - Instructions:  
  [https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)
   
-#### Tutorials, how-to guides and past workshops
+##### Tutorials, how-to guides and past workshops
  
 - How-to guides (short, one-line CLI tasks):   
 [https://www.ncbi.nlm.nih.gov/datasets/docs/v2/how-tos/](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/how-tos/)
