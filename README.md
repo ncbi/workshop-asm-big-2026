@@ -5,6 +5,8 @@ This workshop introduces NCBI resources and tools for exploring microbial genome
 ## Workshop projects
 
 ### Part 1 - Datasets
+1. **[Overview of NCBI Datasets](datasets/datasets.md#ncbi-datasets-an-overview)**
+2. **[Retrieving Bacterial data and metadata using the NCBI Datasets CLI](https://github.com/ncbi/workshop-asm-big-2026/blob/main/datasets/datasets.md#retrieving-bacterial-data-and-metadata-using-datasets)**
 
 ### Part 2 - SRA
 
