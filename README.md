@@ -5,9 +5,9 @@ This workshop introduces NCBI resources and tools for exploring microbial genome
 ## Workshop projects
 
 ### Part 1 - NCBI Datasets CLI
-1. **[Overview of NCBI Datasets](datasets/datasets.md#ncbi-datasets-an-overview)** Quick overview of NCBI Datasets command-line (CLI) tool, available services and how to build a command.
-2. **[Retrieving Bacterial data and metadata](datasets/datasets.md#retrieving-bacterial-data-and-metadata-using-datasets)** Download small and large bacterial genome packages using TaxIDs, accessions, and lists of identifiers; extract and export specific metadata fields from JSON/JSON-L to TSV using dataformat.
-3. **[Retrieving Virus information](datasets/datasets.md#retrieving-virus-information-using-ncbi-datasets)** Learn how the Virus endpoint differs from the Genome endpoint and how cache packages can be used for retrieval of SARS-CoV-2 and Influenza genomes; download and filter data retrievals by specific metadata fields.
+1. **[Overview of NCBI Datasets](datasets/datasets.md#1-ncbi-datasets-an-overview)** Quick overview of NCBI Datasets command-line (CLI) tool, available services and how to build a command.
+2. **[Retrieving Bacterial data and metadata](datasets/datasets.md#2-retrieving-bacterial-data-and-metadata-using-datasets)** Download small and large bacterial genome packages using TaxIDs, accessions, and lists of identifiers; extract and export specific metadata fields from JSON/JSON-L to TSV using dataformat.
+3. **[Retrieving Virus information](datasets/datasets.md#3-retrieving-virus-information-using-ncbi-datasets)** Learn how the Virus endpoint differs from the Genome endpoint and how cache packages can be used for retrieval of SARS-CoV-2 and Influenza genomes; download and filter data retrievals by specific metadata fields.
 
 ### Part 2 - SRA
 
