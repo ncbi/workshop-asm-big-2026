@@ -30,7 +30,7 @@ In this virtual machine, we have the necessary tools installed for you to explor
 The NCBI Datasets CLI command structure is very intuitive. If you take a look at the diagram below, you will notice that the commands are built by choosing one option from each vertical rectangle. Let's start!
 
 <div style="text-align: center;">
-<img src="https://github.com/ncbi/workshop-asm-big-2026/blob/9d026150ac4beaeb3daef03c20d71e8084e8cf40/datasets/images/command-choice.png" alt="commands" style="width: 700px;">
+<img src="https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/main/datasets/images/command-choice.png" alt="commands" style="width: 700px;">
 </div>
 
 In addition to *datasets*, we also have *dataformat*, a companion tool to explore and convert metadata to TSV or Excel formats. We will cover the *dataformat* command syntax and use in the metadata metadata section below.
@@ -341,7 +341,7 @@ datasets summary genome taxon "salmonella bongori"  --reference | jq .
 Sometimes, we are interested in only a specific piece of metadata information about the species we are studying. For example, if we want to generate a table with only the CheckM quality scores for all samples available for that species, we could use the *dataformat* CLI. *dataformat* has specific schemas for each type of metadata reports, and can be used to convert JSON-Lines to TSV or excel formats.
 
 <div style="text-align: center;">
-<img src="https://github.com/ncbi/workshop-asm-big-2026/blob/9d026150ac4beaeb3daef03c20d71e8084e8cf40/datasets/images/dataformat.png" alt="dataformat" style="width: 500px;">
+<img src="https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/main/datasets/images/dataformat.png" alt="dataformat" style="width: 500px;">
 </div>
 
 Let's take a look at the help menu:
