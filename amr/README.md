@@ -106,6 +106,15 @@ The expected allele reflects the documented outbreak; the records and filter cho
 
 In this exercise we're going to examine the phenotypic effect of fluoroquinolone resistance elements on ciprofloxacin antibiotic susceptibility tests (AST) in _Pseudomonas aeruginosa_ using the [AMRgen R package](https://amrgen.org/) from the [ESGEM-AMR working group](https://esgem-amr.amrrules.org/).
 
+### Part 0: Setup
+
+If you haven't already please clone the git repository into your home directory. We will be using some files from there. 
+
+```
+cd
+git clone https://github.com/ncbi/workshop-asm-big-2026.git
+```
+
 ### Part 1: download phenotype data
 
 #### 1. Sign in and open the AST Browser
@@ -198,7 +207,7 @@ Keep the default columns as well as **Hierarchy node ID**: the script relies on 
 
 #### 8. Upload the data to Jupyter
 
-Open the workshop Jupyter environment. Navigate to your working directory and use the upload button to upload `asts.tsv` and `microbigge.tsv`.
+Open the workshop Jupyter environment. Navigate to your working directory and use the upload button to upload `asts.tsv` and `microbigge.tsv`, for convenience please place them in the `workshop-asm-big-2026/amr` directory.
 
 ![Jupyter upload button](https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/main/images/amr10-jupyter_upload_button.png)
 
@@ -211,6 +220,7 @@ In Jupyter, click **+** to open a Launcher, then select **Terminal**. A terminal
 Run each of these commands by typing or pasting it into the terminal and pressing **Enter**:
 
 ```bash
+cd $HOME/workshop-asm-big-2026/amr
 pwd
 ls
 ```
@@ -219,7 +229,7 @@ ls
 
 #### 10. Upload the analysis script
 
-Also place the supplied [compare_amr.R](compare_amr.R) script in that directory. If you are using a checkout of this repository in Jupyter, the script should already be in the `amr` directory; upload your tables there.
+Make sure the supplied [compare_amr.R](compare_amr.R) script is in that directory. If you are using a checkout of this repository in Jupyter, the script should already be in the `amr` directory; upload your tables there.
 
 Or run the following to download it from the GitHub site:
 
@@ -228,6 +238,8 @@ curl -fsSLO https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/he
 ```
 
 #### 11. Run the analysis script
+
+`compare_amr.R` is a command-line R script that uses the [AMRgen](https://amrgen.org/) package to compare AMRFinderPlus genotype reports to AST phenotype reports. It handles CLSI or EUCAST interpretation of SIR standards, standardization of drug names, and many other issues that come up with doing the comparison.
 
 Copy and paste the entire command below, then press **Enter**. A backslash (`\`) at the end of a line continues the same command on the next line; keep it as the last character on that line, with no spaces after it. Wait for the terminal prompt to return before entering another command.
 
