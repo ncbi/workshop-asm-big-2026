@@ -292,13 +292,42 @@ pwd
 
 ```bash
 amrfinder -V
+datasets version
 ```
 
-The command prints the AMRFinderPlus software and database versions. Note these versions so you know which software and reference data produced your results.
+These commands print the AMRFinderPlus software and database versions and the NCBI Datasets CLI version. Note these versions so you know which software and reference data produced your results. The workshop environment includes NCBI Datasets; for your own computer, see the [installation instructions](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/command-line-tools/download-and-install/). You will also need `unzip` to extract the downloaded package.
 
 ### 3. Download the three input files
 
-AMRFinderPlus can combine searches of the assembly DNA and annotated proteins, using the GFF annotation to connect proteins to their positions in the assembly. Download these three matching files from the [NCBI assembly directory](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/019/329/745/GCF_019329745.1_ASM1932974v1/):
+AMRFinderPlus can combine searches of the assembly DNA and annotated proteins, using the GFF annotation to connect proteins to their positions in the assembly. Use NCBI Datasets to download these three matching files in one package. The original curl instructions follow for comparison; choose one download method.
+
+#### Download with NCBI Datasets
+
+Run these commands from the `GCF_019329745.1` project directory:
+
+```bash
+datasets download genome accession GCF_019329745.1 \
+   --include genome,protein,gff3 \
+   --filename GCF_019329745.1.zip
+unzip GCF_019329745.1.zip -d datasets_download
+ls datasets_download/ncbi_dataset/data/GCF_019329745.1/
+```
+
+`--include` requests the genomic DNA, annotated proteins, and GFF3 annotations. `--filename` names the ZIP archive, and `unzip -d` extracts it into `datasets_download`. Wait for each command to finish before running the next. See the [NCBI Datasets download documentation](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/reference-docs/command-line/datasets/download/genome/) for details.
+
+The three input files are uncompressed inside `datasets_download/ncbi_dataset/data/GCF_019329745.1/`:
+
+| Filename | Contents | AMRFinderPlus option |
+| --- | --- | --- |
+| `GCF_019329745.1_ASM1932974v1_genomic.fna` | Assembled genomic DNA in FASTA format | `-n` |
+| `protein.faa` | Annotated protein sequences in FASTA format | `-p` |
+| `genomic.gff` | Annotations linking proteins to genomic coordinates | `-g` |
+
+Keep your terminal in the project directory and continue to step 4.
+
+#### Alternative: download with curl (retained for comparison)
+
+Download the same three types of input files as separate compressed files from the [NCBI assembly directory](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/019/329/745/GCF_019329745.1_ASM1932974v1/):
 
 | Filename ending | Contents | AMRFinderPlus option |
 | --- | --- | --- |
@@ -324,7 +353,21 @@ You should see all three files listed above.
 
 ### 4. Run AMRFinderPlus
 
-Copy and paste the entire command below, then press **Enter**. The trailing backslashes (`\`) join the lines into one command; do not add spaces after them.
+Use the command matching your download method. Copy and paste the entire command, then press **Enter**. The trailing backslashes (`\`) join the lines into one command; do not add spaces after them.
+
+**For the NCBI Datasets download:**
+
+```bash
+amrfinder \
+   -n datasets_download/ncbi_dataset/data/GCF_019329745.1/GCF_019329745.1_ASM1932974v1_genomic.fna \
+   -p datasets_download/ncbi_dataset/data/GCF_019329745.1/protein.faa \
+   -g datasets_download/ncbi_dataset/data/GCF_019329745.1/genomic.gff \
+   --organism Staphylococcus_epidermidis \
+   --plus \
+   -o amrfinder_results.tsv
+```
+
+**For the curl download (original command):**
 
 ```bash
 amrfinder \
@@ -340,7 +383,7 @@ The `-n`, `-p`, and `-g` options provide the three input files. `--organism Stap
 
 Status messages appear in the terminal while the program runs. Wait until it finishes and the terminal prompt returns, then run `ls` to confirm that `amrfinder_results.tsv` was created.
 
-> **If something goes wrong:** For a missing-file error, run `pwd` and `ls` and check that all three `.gz` filenames match the command. If a download failed, rerun that `curl` command before running AMRFinderPlus. For an incomplete command, press **Ctrl+C** and paste the full command again; if `amrfinder -V` cannot find the software or database, ask an instructor for help.
+> **If something goes wrong:** For a missing-file error, run `pwd` and check the three input paths for your chosen download method. For Datasets, run `ls datasets_download/ncbi_dataset/data/GCF_019329745.1/` and confirm that the ZIP was extracted. For curl, run `ls` and check the three `.gz` filenames. If a download failed, rerun the download command (and extract the ZIP for Datasets) before running AMRFinderPlus. For an incomplete command, press **Ctrl+C** and paste the full command again; if `amrfinder -V` cannot find the software or database, ask an instructor for help.
 
 ### 5. Open the results in Jupyter's table viewer
 
@@ -361,6 +404,6 @@ See [AMRFinderPlus Interpreting results](https://github.com/ncbi/amr/wiki/Interp
 
 The expected symbol is **`aac(6')-Ie/aph(2'')-Ia`**, a fusion gene encoding a bifunctional aminoglycoside-modifying enzyme. Its **AMINOGLYCOSIDE** class identifies it as an aminoglycoside resistance determinant, and in the **SUBCLASS** column you can see that it has broad activity. Looking at the **Method**, **% Coverage of reference**, and **% Identity to reference** columns, it the gene looks pretty close to the reference protein suggesting it is likely functional. Remember this is a sequence-based finding; it does not by itself establish a measured susceptibility phenotype. 
 
-This hit was identified with AMRFinderPlus **4.2.7** and database **2026-03-24.1**, using all three compressed input files and the command above. Other output details can change with software, database, or annotation updates.
+This hit was identified with AMRFinderPlus **4.2.7** and database **2026-03-24.1**, using all three compressed input files and the curl-based AMRFinderPlus command above. Other output details can change with software, database, or annotation updates.
 
 </details>
