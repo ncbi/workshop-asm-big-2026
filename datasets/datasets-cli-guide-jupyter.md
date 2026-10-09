@@ -250,7 +250,7 @@ In addition to the program commands, *datasets* has a number of flags available 
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <p>Build a <i>datasets</i> command to explore the <b>metadata</b> for <i>Salmonella bongori</i>, taxid: 54736. We will look at the tables and build the base command together.</p>
 
@@ -415,7 +415,7 @@ Now let's learn how to download a dehydrated genome data package, understand its
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <p>Download a dehydrated package for <i>Salmonella enterica</i> subsp. <i>diarizonae</i> (taxid 59204) with genome FASTA and GFF3 files</p>
 
@@ -499,7 +499,7 @@ Global Flags
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <p>So, let's say that first we want to download only the GFF3 files, and we first want to check which files would be downloaded. Here's how we would build this command:</p>
 
@@ -583,7 +583,7 @@ Another way of retrieving metadata information using the *datasets* CLI is to us
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <p>Let's print the <b>metadata</b> information for the <b>reference</b> genome of <i>Salmonella bongori</i>. Try it with and without adding <code>| jq .</code></p>
 
@@ -615,7 +615,7 @@ dataformat tsv genome --help
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <p>Now let's generate a TSV of all <i>Salmonella bongori</i> genomes with the following information:</p>
 
@@ -658,7 +658,7 @@ dataformat tsv genome \
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <p>Could you generate the same output we did using the <code>summary</code> command by using the data report from the <b>Salmonella bongori</b> genome data package instead?</p>
 <br>
@@ -721,7 +721,7 @@ In this exercise, we will take a look at the genomes available for the Dengue vi
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <ul>
 <li>Download all Dengue virus genomes (taxid 12637; ~ 57k genomes)</li>
@@ -743,7 +743,7 @@ In this exercise, we will take a look at the genomes available for the Dengue vi
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
-<p>💻 <strong>Let's work together:</strong></p>
+<p>💻 <strong>Let's work together</strong></p>
 
 <ul>
 <li>Look at the first record and all the fields with <code>jq</code></li>
