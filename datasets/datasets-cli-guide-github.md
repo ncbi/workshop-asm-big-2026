@@ -73,6 +73,7 @@ In addition to the program commands, *datasets* has a number of flags available 
 > | I want to download the **best genome** available for my taxon of interest | `--reference` |
 > | How can I download a **list of assembly accessions** from a publication? | `--inputfile list.txt` |
 > | How can I choose only **RefSeq** genome assemblies? | `--assembly-source refseq` |
+> | How can I download **different filetypes**? | `--include genome,cds` |
 > | Can I download only **chromosome level** assemblies from **type specimens**? | `--assembly-level chromosome`<br>`--from-type` |
 > | I want to exclude MAGs from my download | `--mag exclude` |
 
