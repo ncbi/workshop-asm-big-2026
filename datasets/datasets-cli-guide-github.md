@@ -25,8 +25,6 @@ The NCBI Datasets CLI command structure is very intuitive. If you take a look at
 
 > [!TIP]
 > 
-> 💡 **Steps:**
-> 
 > **Step 1. What would you like to do?**
 > 	
 > | Action | CLI option |
@@ -78,11 +76,12 @@ In addition to the program commands, *datasets* has a number of flags available 
 > | Can I download only **chromosome level** assemblies from **type specimens**? | `--assembly-level chromosome`<br>`--from-type` |
 > | I want to exclude MAGs from my download | `--mag exclude` |
 
+<br>
+
 **ADDENDUM: GCA versus GCF**
 
 <img src="https://www.ncbi.nlm.nih.gov/datasets/docs/v2/images/gcf_vs_gca_v9.png" alt="GCA-GCF" width="600">
 
-**Now it's your turn!**
 
 > [!IMPORTANT]
 > 
@@ -117,19 +116,19 @@ Small and large are very relative terms. When thinking about genome projects, th
 > 
 > **Download *S. bongori* genomes by taxid:**
 > 
-> ```bash
+> ```
 > datasets download genome taxon 54736 --filename 54736.zip
 > ```
 > 
 > **Unzip the package and inspect the folder structure and contents**
 > 
-> ```bash
+> ```
 > unzip 54736.zip -d sbongori
 > ```
 > 
 > **Check folder contents using the `tree` command**
 > 
-> ```bash
+> ```
 > tree sbongori/
 > ```
 
@@ -141,7 +140,7 @@ Small and large are very relative terms. When thinking about genome projects, th
 
 *Shigella sonnei* reference genome
 
-```bash
+```
 datasets download genome accession GCF_002950395.1
 ```
 
@@ -153,7 +152,7 @@ datasets download genome accession GCF_002950395.1
 
 The list of accessions must be a plain text file, with one accession per line. Example:
 
-```bash
+```
 cat acc.list
 
 GCF_003710245.1
@@ -168,7 +167,7 @@ GCF_900343025.1
 GCF_013460135.1
 ```
 
-```bash
+```
 datasets download genome accession --inputfile acc.list
 ```
 
@@ -220,8 +219,7 @@ Now let's say that you actually need to download all *Salmonella* genome sequenc
 A dehydrated package doesn't include any data. It has a file (`fetch.txt`) that holds the location information of the requested data files. To retrieve those files, the option *rehydrate* is invoked on the CLI and the files are retrieved.
 
 > [!TIP]
-> 
-> 💡 **Advantages of rehydration**
+> **Advantages of rehydration**
 > 
 > * It's faster than a regular download (it doesn't look like much in this case, but when you're dealing with 500x more sequences, that makes a difference)
 > 
@@ -262,6 +260,8 @@ Now let's learn how to download a dehydrated genome data package, understand its
 > 
 > <details>
 > <summary><strong>QUESTION: what is different here from the previous data package we downloaded?</strong></summary>
+>
+>  <br>
 >
 > - No genomes or GFF3 files were downloaded to the data folder
 > - Extra file: `fetch.txt`
@@ -333,6 +333,8 @@ Global Flags
 > <details>
 > <summary><strong>🧩 Need a hint?</strong></summary>
 >
+> <br> 
+>
 > `datasets rehydrate --directory 59204 --match gff --list | head`
 >
 > </details>
@@ -352,13 +354,13 @@ Global Flags
 > 
 > Make sure you are in the correct working directory before continuing. Run:
 > 
-> ```bash
+> ```
 > pwd
 > ```
 > 
 > You should see something like:
 > 
-> ```bash
+> ```
 > /home/jupyter-your_username/workshop-asm-big-2026/datasets
 > ```
 > 
@@ -368,13 +370,13 @@ Back to the *Salmonella bongori* genome data package we downloaded: in addition 
 
 Let's take a look inside the data package using the command `tree`. From the main folder, type:
 
-```bash
+```
 tree sbongori
 ```
 
 Look for the files `assembly_data_report.jsonl` and `dataset_catalog.json`. The `assembly_data_report.jsonl` has all the main metadata information about the sequences included in the data package. The `dataset_catalog.json` lists all files included in the data package, accession numbers, size and type. Below we have an excerpt of the main data report (`assembly_data_report.jsonl`):
 
-```bash
+```
 {
   "assemblyInfo": {
     "assemblyLevel": "Complete Genome",
@@ -405,9 +407,13 @@ Another way of retrieving metadata information using the *datasets* CLI is to us
 > <details>
 > <summary><strong>🧩 Need a hint?</strong></summary>
 >
+> <br> 
+>  
 > `datasets summary genome taxon "salmonella bongori" --reference`
 >
 > </details>
+
+<br>
 
 **Extracting specific metadata fields from the reports**
 
@@ -417,7 +423,7 @@ Sometimes, we are interested in only a specific piece of metadata information ab
 
 Let's take a look at the help menu:
 
-```bash
+```
 dataformat tsv genome --help
 ```
 
@@ -432,7 +438,7 @@ dataformat tsv genome --help
 > - CheckM completeness
 > - CheckM contamination
 > 
-> ```bash
+> ```
 > datasets summary genome taxon 54736 --as-json-lines | \
 > dataformat tsv genome \
 > --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination |\
@@ -456,7 +462,7 @@ dataformat tsv genome --help
 
 You can save this output and look at the results in the program of your preference. To save the output, you would redirect it to a file, like this:
 
-```bash
+```
 datasets summary genome taxon "salmonella bongori" --as-json-lines | \
 dataformat tsv genome \
 --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination > sbongori_stats.tsv
@@ -473,7 +479,9 @@ dataformat tsv genome \
 > <details>
 > <summary><strong>1. Using the zipped data package as input</strong></summary>
 >
-> ```bash
+>  <br>
+>  
+> ```
 > dataformat tsv genome --package 54736.zip \
 > --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination |\
 >  column -ts $'\t'
@@ -484,7 +492,9 @@ dataformat tsv genome \
 > <details>
 > <summary><strong>2. Pointing to the specific report in the unzipped data package:</strong></summary>
 >
-> ```bash
+> <br>
+>
+> ```
 > dataformat tsv genome \
 > --inputfile sbongori/ncbi_dataset/data/assembly_data_report.jsonl \
 > --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | \
@@ -509,8 +519,7 @@ The data available through the Datasets Virus and Genome endpoints originate fro
 - Use the Virus endpoint to access all available virus sequences including complete and partial ones;
 
 > [!TIP]
-> 
-> 💡 **Special virus cases: cache packages for SARS-CoV-2 and Influenza**
+>  **Special virus cases: cache packages for SARS-CoV-2 and Influenza**
 > 
 > For both SARS-CoV-2 and (Alpha)Influenza, NCBI Datasets CLI provides a cache package. A cache package is pre-packaged with all genomes available for those two taxa.
 > 
@@ -520,21 +529,19 @@ The data available through the Datasets Virus and Genome endpoints originate fro
 
 In this exercise, we will take a look at the genomes available for the Dengue virus. The Virus endpoint has different filters than the Genome endpoint. Use the `--help` flag to explore the filtering options.
 
-Dengue Virus (taxid 12637; ~ 57k genomes)
-
 > [!IMPORTANT]
 > 
 > **💻 Let's work together:**
 > 
-> - Download all genomes
+> - Download all Dengue virus genomes (taxid 12637; ~ 57k genomes)
 > 
 > ```bash
 > datasets download virus genome taxon 12637 --filename dengue-all.zip
 > ```
 > 
-> - Download reference (4 genomes, Dengue virus 1-4)
+> - Download reference genomes (4 genomes, Dengue virus 1-4)
 > 
-> ```bash
+> ```
 > datasets download virus genome taxon 12637 --refseq --filename dengue-all-ref.zip
 > ```
 
@@ -546,7 +553,7 @@ Dengue Virus (taxid 12637; ~ 57k genomes)
 > 
 > - Look at the first record and all the fields with `jq`
 > 
-> ```bash
+> ```
 > datasets summary virus genome taxon 12637 --limit 1 | jq
 > ```
 > 
@@ -556,20 +563,20 @@ Dengue Virus (taxid 12637; ~ 57k genomes)
 >    - `sort` will sort all the `geo-location` entries in alphabetical order
 >    - `uniq -c` will count the number of each unique entry
 > 
-> ```bash
+> ```
 > datasets summary virus genome taxon 12637 --as-json-lines | \
 > dataformat tsv virus-genome --fields geo-location | sort | uniq -c
 > ```
 > 
 > - Let's look at all genomes filtered by geo-location (Brazil)
 > 
-> ```bash
+> ```
 > datasets summary virus genome taxon 12637 --geo-location Brazil | jq .total_count
 > ```
 > 
 > - We have another field to filter by US state that's separate from the `--geo-location` flag. Let's take a look at how many genomes we have from Florida using the `summary` subcommand and `jq`:
 > 
-> ```bash
+> ```
 > datasets summary virus genome taxon 12637 --usa-state FL | jq .total_count
 > ```
 
