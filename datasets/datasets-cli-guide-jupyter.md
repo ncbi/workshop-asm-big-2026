@@ -474,7 +474,7 @@ data/GCA_002794415.1/genomic.gff
 
 During rehydration, users can filter which files they want to download by string matching. Let's take a look at the `rehydrate` subcommand help menu:
 
-```bash
+```
 datasets rehydrate --help
 
 Download data files for an unzipped, dehydrated genome data package. Data files specified in fetch.txt will be downloaded from NCBI. Read more about how rehydration can help with large genome downloads: https://www.ncbi.nlm.nih.gov/datasets/docs/v2/how-tos/genomes/large-download/
@@ -553,13 +553,13 @@ Back to the *Salmonella bongori* genome data package we downloaded: in addition 
 
 Let's take a look inside the data package using the command `tree`. From the main folder, type:
 
-```bash
+```
 tree sbongori
 ```
 
 Look for the files `assembly_data_report.jsonl` and `dataset_catalog.json`. The `assembly_data_report.jsonl` has all the main metadata information about the sequences included in the data package. The `dataset_catalog.json` lists all files included in the data package, accession numbers, size and type. Below we have an excerpt of the main data report (`assembly_data_report.jsonl`):
 
-```bash
+```
 {
   "assemblyInfo": {
     "assemblyLevel": "Complete Genome",
@@ -609,7 +609,7 @@ Sometimes, we are interested in only a specific piece of metadata information ab
 
 Let's take a look at the help menu:
 
-```bash
+```
 dataformat tsv genome --help
 ```
 
@@ -650,7 +650,7 @@ GCF_007019345.1     Salmonella bongori           99.5                 2.41
 
 You can save this output and look at the results in the program of your preference. To save the output, you would redirect it to a file, like this:
 
-```bash
+```
 datasets summary genome taxon "salmonella bongori" --as-json-lines | \
 dataformat tsv genome \
 --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination > sbongori_stats.tsv
@@ -719,21 +719,19 @@ The data available through the Datasets Virus and Genome endpoints originate fro
 
 In this exercise, we will take a look at the genomes available for the Dengue virus. The Virus endpoint has different filters than the Genome endpoint. Use the `--help` flag to explore the filtering options.
 
-Dengue Virus (taxid 12637; ~ 57k genomes)
-
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
 <p>💻 <strong>Let's work together:</strong></p>
 
 <ul>
-<li>Download all genomes</li>
+<li>Download all Dengue virus genomes (taxid 12637; ~ 57k genomes)</li>
 </ul>
 
 <pre><code>datasets download virus genome taxon 12637 --filename dengue-all.zip
 </code></pre>
 
 <ul>
-<li>Download reference (4 genomes, Dengue virus 1-4)</li>
+<li>Download reference genomes (4 genomes, Dengue virus 1-4)</li>
 </ul>
 
 <pre><code>datasets download virus genome taxon 12637 --refseq --filename dengue-all-ref.zip
