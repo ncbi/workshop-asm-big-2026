@@ -227,6 +227,10 @@ In addition to the program commands, *datasets* has a number of flags available 
       <td style="text-align:right !important;"><code>--assembly-source refseq</code></td>
     </tr>
     <tr>
+      <td style="text-align:left !important;">How can I download <b>different filetypes?</b></td>
+      <td style="text-align:right !important;"><code>--include genome,cds</code></td>
+    </tr>
+     <tr>
       <td style="text-align:left !important;">Can I download only <b>chromosome level</b> assemblies from <b>type specimens</b>?</td>
       <td style="text-align:right !important;"><code>--assembly-level chromosome<br>--from-type</code></td>
     </tr>
@@ -239,6 +243,7 @@ In addition to the program commands, *datasets* has a number of flags available 
 </div>
 
 <br>
+
 
 **ADDENDUM: GCA versus GCF**
 
