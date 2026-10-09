@@ -85,7 +85,7 @@ In addition to the program commands, *datasets* has a number of flags available 
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > Build a *datasets* command to explore the **metadata** for *Salmonella bongori*, taxid: 54736. We will look at the tables and build the base command together.
 > 
@@ -236,7 +236,7 @@ Now let's learn how to download a dehydrated genome data package, understand its
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > Download a dehydrated package for *Salmonella enterica* subsp. *diarizonae* (taxid 59204) with genome FASTA and GFF3 files
 > 
@@ -317,7 +317,7 @@ Global Flags
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > So, let's say that first we want to download only the GFF3 files, and we first want to check which files would be downloaded. Here's how we would build this command:
 > 
@@ -400,7 +400,7 @@ Another way of retrieving metadata information using the *datasets* CLI is to us
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > Let's print the **metadata** information for the **reference** genome of *Salmonella bongori*. Try it with and without adding `| jq .`
 > 
@@ -429,7 +429,7 @@ dataformat tsv genome --help
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > Now let's generate a TSV of all *Salmonella bongori* genomes with the following information:
 > 
@@ -470,7 +470,7 @@ dataformat tsv genome \
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > Could you generate the same output we did using the `summary` command by using the data report from the **Salmonella bongori** genome data package instead?
 > 
@@ -531,7 +531,7 @@ In this exercise, we will take a look at the genomes available for the Dengue vi
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > - Download all Dengue virus genomes (taxid 12637; ~ 57k genomes)
 > 
@@ -549,7 +549,7 @@ In this exercise, we will take a look at the genomes available for the Dengue vi
 
 > [!IMPORTANT]
 > 
-> **💻 Let's work together:**
+> **💻 Let's work together**
 > 
 > - Look at the first record and all the fields with `jq`
 > 
