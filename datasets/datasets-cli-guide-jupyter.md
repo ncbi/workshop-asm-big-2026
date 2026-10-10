@@ -428,14 +428,15 @@ Now let's learn how to download a dehydrated genome data package, understand its
 <p>💻 <strong>Let's work together</strong></p>
 
 <p>Download a dehydrated package for <i>Salmonella enterica</i> subsp. <i>diarizonae</i> (taxid 59204) with genome FASTA and GFF3 files</p>
-<br>
+
 <pre><code>datasets download genome taxon 59204 \
 --dehydrated --include genome,gff3 --filename 59204-dehydrated.zip
 </code></pre>
-<br>
+
 <p>Let's unzip and explore the package contents, and compare it to the previous package we downloaded before.</p>
 
-<pre><code>unzip 59204-dehydrated.zip -d 59204
+<pre><code>
+unzip 59204-dehydrated.zip -d 59204
 
 Archive:  59204-dehydrated.zip
   inflating: 59204/README.md         
@@ -444,7 +445,9 @@ Archive:  59204-dehydrated.zip
   inflating: 59204/ncbi_dataset/data/dataset_catalog.json  
   inflating: 59204/md5sum.txt        
 </code></pre>
+
 <br>
+
 <details>
 <summary><strong>QUESTION: what is different here from the previous data package we downloaded?</strong></summary>
 <br>
@@ -468,6 +471,8 @@ data/GCA_001629775.1/genomic.gff
 data/GCA_002794415.1/GCA_002794415.1_ASM279441v1_genomic.fna
 data/GCA_002794415.1/genomic.gff
 </code></pre>
+
+<br>
 
 <p>Here we can see:</p>
 
@@ -521,6 +526,8 @@ rehydrate		# calls the rehydrate subcommand
 | head			# pipe the output to the command head, which prints the first ten lines.
 </code></pre>
 
+<br>
+
 <details>
 <summary><strong>🧩 Need a hint?</strong></summary>
 <br>
@@ -549,15 +556,21 @@ rehydrate		# calls the rehydrate subcommand
 
 <pre><code>pwd</code></pre>
 
+<br>
+
 <p>You should see something like:</p>
 
 <pre><code>/home/jupyter-your_username/workshop-asm-big-2026/datasets</code></pre>
+
+<br>
 
 <p>If you're not in the right folder, use <code>cd</code> to navigate there before continuing with the next steps.</p>
 
 </div>
 
-Back to the *Salmonella bongori* genome data package we downloaded: in addition to the sequence and annotation data, NCBI Datasets **always** includes metadata reports with the data packages. Each data package type (genome, gene, virus, taxonomy) will have a specific data report in JSON or JSON-Lines format.
+<br>
+
+Back to the <i>Salmonella bongori</i> genome data package we downloaded: in addition to the sequence and annotation data, NCBI Datasets <strong>always</strong> includes metadata reports with the data packages. Each data package type (genome, gene, virus, taxonomy) will have a specific data report in JSON or JSON-Lines format.
 
 Let's take a look inside the data package using the command `tree`. From the main folder, type:
 
