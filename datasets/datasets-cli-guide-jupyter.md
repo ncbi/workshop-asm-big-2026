@@ -251,8 +251,6 @@ In addition to the program commands, *datasets* has a number of flags available 
    <img src="https://www.ncbi.nlm.nih.gov/datasets/docs/v2/images/gcf_vs_gca_v9.png" alt="GCA-GCF" style="width: 600px;">
 </div>
 
-**Now it's your turn!**
-
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
 
 <p>💻 <strong>Let's work together</strong></p>
@@ -287,17 +285,21 @@ Small and large are very relative terms. When thinking about genome projects, th
 
 <p><strong>Download <i>S. bongori</i> genomes by taxid:</strong></p>
 
-<p><code>datasets download genome taxon 54736 --filename 54736.zip</code></p>
+<pre><code>datasets download genome taxon 54736 --filename 54736.zip</code></pre>
+<br>
 
 <p><strong>Unzip the package and inspect the folder structure and contents</strong></p>
 
-<p><code>unzip 54736.zip -d sbongori</code></p>
+<pre><code>unzip 54736.zip -d sbongori</code></pre>
+<br>
 
 <p><strong>Check folder contents using the <code>tree</code> command</strong></p>
 
-<p><code>tree sbongori/</code></p>
+<pre><code>tree sbongori/</code></pre>
 
 </div>
+
+<br>
 
 **Other ways to retrieve genome data:**
 
@@ -318,11 +320,15 @@ datasets download genome accession GCF_002950395.1
 <summary><strong>2. List of accessions</strong></summary>
 <br>
 
+```
+datasets download genome accession --inputfile acc.txt
+```
+
+<br>
+
 The list of accessions must be a plain text file, with one accession per line. Example:
 
 ```
-cat acc.list
-
 GCF_003710245.1
 GCF_000164865.1
 GCF_900604315.1
@@ -335,9 +341,6 @@ GCF_900343025.1
 GCF_013460135.1
 ```
 
-```
-datasets download genome accession --inputfile acc.list
-```
 <br>
 
 </details>
@@ -346,11 +349,17 @@ datasets download genome accession --inputfile acc.list
 <summary><strong>3. List of taxa</strong></summary>
 <br>
 
+```
+datasets summary genome taxon --inputfile taxid.txt
+```
+<br>
+
 Similar to the accession list, the list of taxa should be formatted as a plain text file, with one taxon per line. We recommend using the NCBI TaxID when retrieving data by taxon to avoid any issues with duplicate or ambiguous names.
 
-```
-cat taxid.txt
 
+<br>
+
+```
 2762229
 351671
 2926470
@@ -371,10 +380,6 @@ cat taxid.txt
 796334
 2027290
 69220
-```
-
-```
-datasets summary genome taxon --inputfile taxid.txt
 ```
 <br>
 
@@ -398,7 +403,7 @@ A dehydrated package doesn't include any data. It has a file (`fetch.txt`) that 
   <thead>
     <tr>
       <th style="text-align:left !important;"></th>
-      <th style="text-align:center !important;">Salmonella enterica subsp. diarizonae (975 genomes, taxid 59204)</th>
+      <th style="text-align:center !important;">Salmonella enterica subsp. diarizonae<br>(975 genomes, taxid 59204)</th>
     </tr>
   </thead>
   <tbody>
@@ -421,6 +426,8 @@ A dehydrated package doesn't include any data. It has a file (`fetch.txt`) that 
 
 </div>
 
+<br>
+
 Now let's learn how to download a dehydrated genome data package, understand its structure and contents and choose which data files we want to download.
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
@@ -429,14 +436,12 @@ Now let's learn how to download a dehydrated genome data package, understand its
 
 <p>Download a dehydrated package for <i>Salmonella enterica</i> subsp. <i>diarizonae</i> (taxid 59204) with genome FASTA and GFF3 files</p>
 
-<pre><code>datasets download genome taxon 59204 \
---dehydrated --include genome,gff3 --filename 59204-dehydrated.zip
+<pre><code>datasets download genome taxon 59204 --dehydrated --include genome,gff3 --filename 59204-dehydrated.zip
 </code></pre>
-
+<br>
 <p>Let's unzip and explore the package contents, and compare it to the previous package we downloaded before.</p>
 
-<pre><code>
-unzip 59204-dehydrated.zip -d 59204
+<pre><code>unzip 59204-dehydrated.zip -d 59204
 
 Archive:  59204-dehydrated.zip
   inflating: 59204/README.md         
@@ -445,12 +450,9 @@ Archive:  59204-dehydrated.zip
   inflating: 59204/ncbi_dataset/data/dataset_catalog.json  
   inflating: 59204/md5sum.txt        
 </code></pre>
-
 <br>
-
 <details>
 <summary><strong>QUESTION: what is different here from the previous data package we downloaded?</strong></summary>
-<br>
 <ul>
 <li>No genomes or GFF3 files were downloaded to the data folder</li>
 <li>Extra file: <code>fetch.txt</code></li>
@@ -525,14 +527,12 @@ rehydrate		# calls the rehydrate subcommand
 --list			# shows which files WILL be downloaded
 | head			# pipe the output to the command head, which prints the first ten lines.
 </code></pre>
-
 <br>
-
 <details>
 <summary><strong>🧩 Need a hint?</strong></summary>
 <br>
-<code>datasets rehydrate --directory 59204 --match gff --list | head</code>
-<br>
+<pre><code>datasets rehydrate --directory 59204 --match gff --list | head</code></pre>
+
 </details>
 <br>
 <p><b>BONUS QUESTIONS</b></p>
@@ -541,10 +541,9 @@ rehydrate		# calls the rehydrate subcommand
 <li>What would happen if you ran the same command without the <code>--match</code> flag?</li>
 <li>How can you download only the genomic FASTA files and none of the GFF3?</li>
 </ul>
-<br>
+
 </div>
 
----
 
 ### 2.3. Retrieving and filtering metadata information
 
@@ -553,24 +552,18 @@ rehydrate		# calls the rehydrate subcommand
 <p>🛑 <strong>Checkpoint: Before moving on...</strong></p>
 
 <p>Make sure you are in the correct working directory before continuing. Run:</p>
-
 <pre><code>pwd</code></pre>
-
 <br>
-
 <p>You should see something like:</p>
 
 <pre><code>/home/jupyter-your_username/workshop-asm-big-2026/datasets</code></pre>
-
 <br>
-
 <p>If you're not in the right folder, use <code>cd</code> to navigate there before continuing with the next steps.</p>
 
 </div>
-
 <br>
 
-Back to the <i>Salmonella bongori</i> genome data package we downloaded: in addition to the sequence and annotation data, NCBI Datasets <strong>always</strong> includes metadata reports with the data packages. Each data package type (genome, gene, virus, taxonomy) will have a specific data report in JSON or JSON-Lines format.
+Back to the *Salmonella bongori* genome data package we downloaded: in addition to the sequence and annotation data, NCBI Datasets **always** includes metadata reports with the data packages. Each data package type (genome, gene, virus, taxonomy) will have a specific data report in JSON or JSON-Lines format.
 
 Let's take a look inside the data package using the command `tree`. From the main folder, type:
 
@@ -612,7 +605,7 @@ Another way of retrieving metadata information using the *datasets* CLI is to us
 <summary><strong>🧩 Need a hint?</strong></summary>
 <br>
 
-<code>datasets summary genome taxon "salmonella bongori" --reference</code>
+<pre><code>datasets summary genome taxon "salmonella bongori" --reference</code></pre>
 <br>
 </details>
 
@@ -648,7 +641,9 @@ dataformat tsv genome --help
 </ul>
 
 <pre><code>datasets summary genome taxon 54736 --as-json-lines | dataformat tsv genome --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | column -ts $'\t'
+</code></pre>
 
+<pre><code>
 Assembly Accession  ANI Best ANI match Organism  CheckM completeness  CheckM contamination
 GCF_002035285.1     Salmonella bongori           99.63                1.29
 GCF_002035475.1     Salmonella bongori           99.48                0.82
@@ -665,10 +660,10 @@ GCF_007019345.1     Salmonella bongori           99.5                 2.41
 ...
 </code></pre>
 </div>
-
+<br>
 You can save this output and look at the results in the program of your preference. To save the output, you would redirect it to a file, like this:
 
-```
+```bash
 datasets summary genome taxon "salmonella bongori" --as-json-lines | dataformat tsv genome --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination > sbongori_stats.tsv
 ```
 
@@ -677,7 +672,7 @@ datasets summary genome taxon "salmonella bongori" --as-json-lines | dataformat 
 <p>💻 <strong>Let's work together</strong></p>
 
 <p>Could you generate the same output we did using the <code>summary</code> command by using the data report from the <b>Salmonella bongori</b> genome data package instead?</p>
-<br>
+
 
 This can be done in two different ways:
 
@@ -695,9 +690,7 @@ This can be done in two different ways:
 <details>
 <summary><strong>2. Pointing to the specific report in the unzipped data package:</strong></summary>
 <br>
-
-<pre><code>
-dataformat tsv genome --inputfile sbongori/ncbi_dataset/data/assembly_data_report.jsonl --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | column -ts $'\t'
+<pre><code>dataformat tsv genome --inputfile sbongori/ncbi_dataset/data/assembly_data_report.jsonl --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | column -ts $'\t'
 </code></pre>
 
 <br>
