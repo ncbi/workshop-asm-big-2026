@@ -325,32 +325,6 @@ The three input files are uncompressed inside `datasets_download/ncbi_dataset/da
 
 Keep your terminal in the project directory and continue to step 4.
 
-#### Alternative: download with curl (retained for comparison)
-
-Download the same three types of input files as separate compressed files from the [NCBI assembly directory](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/019/329/745/GCF_019329745.1_ASM1932974v1/):
-
-| Filename ending | Contents | AMRFinderPlus option |
-| --- | --- | --- |
-| `_genomic.fna.gz` | Assembled genomic DNA in FASTA format | `-n` |
-| `_protein.faa.gz` | Annotated protein sequences in FASTA format | `-p` |
-| `_genomic.gff.gz` | Annotations linking proteins to genomic coordinates | `-g` |
-
-Run each download command below and wait for the terminal prompt to return. `curl` downloads a file, and the capital `-O` saves it with its original filename. `-f` reports a failed HTTP request as an error, and `-L` follows redirects.
-
-```bash
-curl -fLO https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/019/329/745/GCF_019329745.1_ASM1932974v1/GCF_019329745.1_ASM1932974v1_genomic.fna.gz
-curl -fLO https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/019/329/745/GCF_019329745.1_ASM1932974v1/GCF_019329745.1_ASM1932974v1_protein.faa.gz
-curl -fLO https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/019/329/745/GCF_019329745.1_ASM1932974v1/GCF_019329745.1_ASM1932974v1_genomic.gff.gz
-```
-
-Check the downloaded filenames:
-
-```bash
-ls
-```
-
-You should see all three files listed above.
-
 ### 4. Run AMRFinderPlus
 
 Use the command matching your download method. Copy and paste the entire command, then press **Enter**. The trailing backslashes (`\`) join the lines into one command; do not add spaces after them.
@@ -364,19 +338,7 @@ amrfinder \
    -g datasets_download/ncbi_dataset/data/GCF_019329745.1/genomic.gff \
    --organism Staphylococcus_epidermidis \
    --plus \
-   -o amrfinder_results.tsv
-```
-
-**For the curl download (original command):**
-
-```bash
-amrfinder \
-   -n GCF_019329745.1_ASM1932974v1_genomic.fna.gz \
-   -p GCF_019329745.1_ASM1932974v1_protein.faa.gz \
-   -g GCF_019329745.1_ASM1932974v1_genomic.gff.gz \
-   --organism Staphylococcus_epidermidis \
-   --plus \
-   -o amrfinder_results.tsv
+   --output amrfinder_results.tsv
 ```
 
 The `-n`, `-p`, and `-g` options provide the three input files. `--organism Staphylococcus_epidermidis` enables organism-specific screening, including curated resistance-associated point mutations. `--plus` adds selected stress response and virulence genes. `-o` saves the results as a tab-separated table named `amrfinder_results.tsv` in your working directory. See the [AMRFinderPlus running instructions](https://github.com/ncbi/amr/wiki/Running-AMRFinderPlus) for more about these options.
