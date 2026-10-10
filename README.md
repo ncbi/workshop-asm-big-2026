@@ -11,7 +11,9 @@ This workshop introduces NCBI resources and tools for exploring microbial genome
 
 ### Part 2 - SRA
 
-### Part 3 - Pathogens
+### Part 3 - Bacterial Pathogens
+
+Presentation: [bacterial_pathogens.pptx](bacterial_pathogens.pptx)
 
 1. **[Outbreak investigation with NCBI Pathogen Detection](outbreak/README.md).** Investigate a clinical _Listeria monocytogenes_ isolate, explore closely related isolates, and use genomic relationships and metadata to develop hypotheses about the source of an outbreak.
 2. **[Antibiotic resistance: exploring resistance genes and comparing phenotypes](amr/README.md).** Examine resistance genes in _Pseudomonas aeruginosa_, compare AMRFinderPlus results with laboratory susceptibility measurements, and run AMRFinderPlus on a _Staphylococcus epidermidis_ genome.
