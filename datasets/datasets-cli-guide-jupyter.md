@@ -265,6 +265,8 @@ In addition to the program commands, *datasets* has a number of flags available 
 
 </div>
 
+<br>
+
 In addition to *datasets*, we also have *dataformat*, a companion tool to explore and convert metadata to TSV or Excel formats. We will cover the *dataformat* command syntax and use in the metadata section below.
 
 ## 2. Retrieving bacterial data and metadata using *datasets*
@@ -305,9 +307,10 @@ Small and large are very relative terms. When thinking about genome projects, th
 
 *Shigella sonnei* reference genome
 
-```bash
+```
 datasets download genome accession GCF_002950395.1
 ```
+<br>
 
 </details>
 
@@ -317,7 +320,7 @@ datasets download genome accession GCF_002950395.1
 
 The list of accessions must be a plain text file, with one accession per line. Example:
 
-```bash
+```
 cat acc.list
 
 GCF_003710245.1
@@ -332,9 +335,10 @@ GCF_900343025.1
 GCF_013460135.1
 ```
 
-```bash
+```
 datasets download genome accession --inputfile acc.list
 ```
+<br>
 
 </details>
 
@@ -344,7 +348,7 @@ datasets download genome accession --inputfile acc.list
 
 Similar to the accession list, the list of taxa should be formatted as a plain text file, with one taxon per line. We recommend using the NCBI TaxID when retrieving data by taxon to avoid any issues with duplicate or ambiguous names.
 
-```bash
+```
 cat taxid.txt
 
 2762229
@@ -369,9 +373,10 @@ cat taxid.txt
 69220
 ```
 
-```bash
+```
 datasets summary genome taxon --inputfile taxid.txt
 ```
+<br>
 
 </details>
 
@@ -423,11 +428,11 @@ Now let's learn how to download a dehydrated genome data package, understand its
 <p>💻 <strong>Let's work together</strong></p>
 
 <p>Download a dehydrated package for <i>Salmonella enterica</i> subsp. <i>diarizonae</i> (taxid 59204) with genome FASTA and GFF3 files</p>
-
+<br>
 <pre><code>datasets download genome taxon 59204 \
 --dehydrated --include genome,gff3 --filename 59204-dehydrated.zip
 </code></pre>
-
+<br>
 <p>Let's unzip and explore the package contents, and compare it to the previous package we downloaded before.</p>
 
 <pre><code>unzip 59204-dehydrated.zip -d 59204
@@ -439,7 +444,7 @@ Archive:  59204-dehydrated.zip
   inflating: 59204/ncbi_dataset/data/dataset_catalog.json  
   inflating: 59204/md5sum.txt        
 </code></pre>
-
+<br>
 <details>
 <summary><strong>QUESTION: what is different here from the previous data package we downloaded?</strong></summary>
 <br>
@@ -522,14 +527,14 @@ rehydrate		# calls the rehydrate subcommand
 <code>datasets rehydrate --directory 59204 --match gff --list | head</code>
 <br>
 </details>
-
+<br>
 <p><b>BONUS QUESTIONS</b></p>
 
 <ul>
 <li>What would happen if you ran the same command without the <code>--match</code> flag?</li>
 <li>How can you download only the genomic FASTA files and none of the GFF3?</li>
 </ul>
-
+<br>
 </div>
 
 ---
@@ -542,13 +547,11 @@ rehydrate		# calls the rehydrate subcommand
 
 <p>Make sure you are in the correct working directory before continuing. Run:</p>
 
-<pre><code>pwd
-</code></pre>
+<pre><code>pwd</code></pre>
 
 <p>You should see something like:</p>
 
-<pre><code>/home/jupyter-your_username/workshop-asm-big-2026/datasets
-</code></pre>
+<pre><code>/home/jupyter-your_username/workshop-asm-big-2026/datasets</code></pre>
 
 <p>If you're not in the right folder, use <code>cd</code> to navigate there before continuing with the next steps.</p>
 
@@ -597,7 +600,7 @@ Another way of retrieving metadata information using the *datasets* CLI is to us
 <br>
 
 <code>datasets summary genome taxon "salmonella bongori" --reference</code>
-
+<br>
 </details>
 
 </div>
@@ -631,10 +634,7 @@ dataformat tsv genome --help
 <li>CheckM contamination</li>
 </ul>
 
-<pre><code>datasets summary genome taxon 54736 --as-json-lines | \
-dataformat tsv genome \
---fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination |\
-column -ts $'\t'
+<pre><code>datasets summary genome taxon 54736 --as-json-lines | dataformat tsv genome --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | column -ts $'\t'
 
 Assembly Accession  ANI Best ANI match Organism  CheckM completeness  CheckM contamination
 GCF_002035285.1     Salmonella bongori           99.63                1.29
@@ -656,9 +656,7 @@ GCF_007019345.1     Salmonella bongori           99.5                 2.41
 You can save this output and look at the results in the program of your preference. To save the output, you would redirect it to a file, like this:
 
 ```
-datasets summary genome taxon "salmonella bongori" --as-json-lines | \
-dataformat tsv genome \
---fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination > sbongori_stats.tsv
+datasets summary genome taxon "salmonella bongori" --as-json-lines | dataformat tsv genome --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination > sbongori_stats.tsv
 ```
 
 <div style="border-left: 4px solid #8250df; background-color:#faf5ff; padding:12px 16px;">
@@ -674,10 +672,10 @@ This can be done in two different ways:
 <summary><strong>1. Using the zipped data package as input</strong></summary>
 <br>
 
-<pre><code>dataformat tsv genome --package 54736.zip \
---fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination |\
- column -ts $'\t'
+<pre><code>dataformat tsv genome --package 54736.zip --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | column -ts $'\t'
 </code></pre>
+
+<br>
 
 </details>
 
@@ -685,11 +683,11 @@ This can be done in two different ways:
 <summary><strong>2. Pointing to the specific report in the unzipped data package:</strong></summary>
 <br>
 
-<pre><code>dataformat tsv genome \
---inputfile sbongori/ncbi_dataset/data/assembly_data_report.jsonl \
---fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | \
-column -ts $'\t'
+<pre><code>
+dataformat tsv genome --inputfile sbongori/ncbi_dataset/data/assembly_data_report.jsonl --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | column -ts $'\t'
 </code></pre>
+
+<br>
 
 </details>
 
@@ -768,8 +766,7 @@ In this exercise, we will take a look at the genomes available for the Dengue vi
 </li>
 </ul>
 
-<pre><code>datasets summary virus genome taxon 12637 --as-json-lines | \
-dataformat tsv virus-genome --fields geo-location | sort | uniq -c
+<pre><code>datasets summary virus genome taxon 12637 --as-json-lines | dataformat tsv virus-genome --fields geo-location | sort | uniq -c
 </code></pre>
 
 <ul>
