@@ -111,7 +111,7 @@ In this exercise we're going to examine the phenotypic effect of fluoroquinolone
 If you haven't already please clone the git repository into your home directory. We will be using some files from there. 
 
 ```
-cd
+cd $HOME
 git clone https://github.com/ncbi/workshop-asm-big-2026.git
 ```
 
@@ -281,8 +281,7 @@ Run the following commands one line at a time, pressing **Enter** after each:
 
 ```bash
 pwd
-mkdir -p GCF_019329745.1
-cd GCF_019329745.1
+cd $HOME/workshop-asm-big-2026/amr
 pwd
 ```
 
@@ -295,13 +294,11 @@ amrfinder -V
 datasets version
 ```
 
-These commands print the AMRFinderPlus software and database versions and the NCBI Datasets CLI version. Note these versions so you know which software and reference data produced your results. The workshop environment includes NCBI Datasets; for your own computer, see the [installation instructions](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/command-line-tools/download-and-install/). You will also need `unzip` to extract the downloaded package.
+These commands print the AMRFinderPlus software and database versions and the NCBI Datasets CLI version. Note these versions so you know which software and reference data produced your results. The workshop environment includes AMRFinderPlus and NCBI Datasets; for your own computer, see the [AMRFinderPlus](https://github.com/ncbi/amr/wiki/Installing-AMRFinder) and [Datasets](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/command-line-tools/download-and-install/) installation instructions. You will also need `unzip` to extract the downloaded package.
 
-### 3. Download the three input files
+### 3. Download the three input files with NCBI Datasets
 
 AMRFinderPlus can combine searches of the assembly DNA and annotated proteins, using the GFF annotation to connect proteins to their positions in the assembly. Use NCBI Datasets to download these three matching files in one package. The original curl instructions follow for comparison; choose one download method.
-
-#### Download with NCBI Datasets
 
 Run these commands from the `GCF_019329745.1` project directory:
 
@@ -328,8 +325,6 @@ Keep your terminal in the project directory and continue to step 4.
 ### 4. Run AMRFinderPlus
 
 Use the command matching your download method. Copy and paste the entire command, then press **Enter**. The trailing backslashes (`\`) join the lines into one command; do not add spaces after them.
-
-**For the NCBI Datasets download:**
 
 ```bash
 amrfinder \

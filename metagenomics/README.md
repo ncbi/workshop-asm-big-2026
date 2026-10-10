@@ -35,10 +35,10 @@ Here, you will use three published plasmids as targets and two short-read metage
 
 ## Exercise overview
 
-1. **Prepare the targets and reads.** Download published plasmid sequences, select three targets, and obtain and filter reads from two metagenomes.
-2. **Explore the sample composition.** Use STAT and its Krona display to examine the taxa represented in a metagenomic sample.
-3. **Assemble and compare sequences.** Run SAUTE and use BLAST to compare the assemblies with the plasmid targets.
-4. **Investigate resistance genes and related genomes.** Run AMRFinderPlus, search Pebblescout, and follow a match into Pathogen Detection.
+1. **[Prepare the targets and reads](#part-1-prepare-plasmid-targets-and-metagenomic-reads).** Download published plasmid sequences, select three targets, and obtain and filter reads from two metagenomes.
+2. **[Explore the sample composition](#part-2-explore-the-samples-taxonomic-composition).** Use STAT and its Krona display to examine the taxa represented in a metagenomic sample.
+3. **[Assemble and compare sequences](#part-3-assemble-and-compare-plasmid-associated-sequences).** Run SAUTE and use BLAST to compare the assemblies with the plasmid targets.
+4. **[Investigate resistance genes and related genomes](#part-4-investigate-resistance-genes-and-related-genomes).** Run AMRFinderPlus, search Pebblescout, and follow a match into Pathogen Detection.
 
 Use the workshop Jupyter environment for terminal commands and file viewing. See [software.md](software.md) for the programs needed. An NCBI account is needed for cross-browser selection in the final step. Downloads and assembly can take several minutes. Allow at least 15 GB of free disk space for these exercises.
 
