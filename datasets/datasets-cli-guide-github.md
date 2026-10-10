@@ -151,11 +151,13 @@ datasets download genome accession GCF_002950395.1
 <summary><strong>2. List of accessions</strong></summary>
 <br>
 
+```
+datasets download genome accession --inputfile acc.txt
+```
+
 The list of accessions must be a plain text file, with one accession per line. Example:
 
 ```
-cat acc.list
-
 GCF_003710245.1
 GCF_000164865.1
 GCF_900604315.1
@@ -168,21 +170,19 @@ GCF_900343025.1
 GCF_013460135.1
 ```
 
-```
-datasets download genome accession --inputfile acc.list
-```
-
 </details>
 
 <details>
 <summary><strong>3. List of taxa</strong></summary>
 <br>
 
+```
+datasets summary genome taxon --inputfile taxid.txt
+```
+
 Similar to the accession list, the list of taxa should be formatted as a plain text file, with one taxon per line. We recommend using the NCBI TaxID when retrieving data by taxon to avoid any issues with duplicate or ambiguous names.
 
-```bash
-cat taxid.txt
-
+```
 2762229
 351671
 2926470
@@ -203,10 +203,6 @@ cat taxid.txt
 796334
 2027290
 69220
-```
-
-```bash
-datasets summary genome taxon --inputfile taxid.txt
 ```
 
 </details>
@@ -440,11 +436,10 @@ dataformat tsv genome --help
 > - CheckM contamination
 > 
 > ```
-> datasets summary genome taxon 54736 --as-json-lines | \
-> dataformat tsv genome \
-> --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination |\
-> column -ts $'\t'
+> datasets summary genome taxon 54736 --as-json-lines | dataformat tsv genome --fields accession,ani-best-ani-match-organism,checkm-completeness,checkm-contamination | column -ts $'\t'
+> ```
 > 
+> ```
 > Assembly Accession  ANI Best ANI match Organism  CheckM completeness  CheckM contamination
 > GCF_002035285.1     Salmonella bongori           99.63                1.29
 > GCF_002035475.1     Salmonella bongori           99.48                0.82
