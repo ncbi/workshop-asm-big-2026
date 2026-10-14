@@ -234,7 +234,7 @@ Make sure the supplied [compare_amr.R](compare_amr.R) script is in that director
 Or run the following to download it from the GitHub site:
 
 ```
-curl -fsSLO https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/edits/amr/compare_amr.R
+curl -fsSLO https://raw.githubusercontent.com/ncbi/workshop-asm-big-2026/refs/heads/main/amr/compare_amr.R
 ```
 
 #### 11. Run the analysis script
