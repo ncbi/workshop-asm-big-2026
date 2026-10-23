@@ -11,6 +11,23 @@ This workshop introduces NCBI resources and tools for exploring microbial genome
 
 ### Part 2 - SRA
 
+Search, Download, and Analyze SRA Data
+In this module, we will walk through tools for working with public data from the Sequence Read Archive (SRA).
+
+The goal is to show how you can move from finding relevant SRA records, to retrieving sequence data, to running a basic downstream analysis.
+
+1. **[DuckDB](sra-notebooks/Demo-01_duckdb.ipynb)**: Query SRA metadata - We can use DuckDB to search and filter SRA metadata.
+   - Query SRA metadata
+   - Filter runs to identify accessions that may be useful downstream
+2. **[SRA Toolkit](sra-notebooks/Demo-02_sratoolkit.ipynb)**: Download SRA data - We can use the SRA Toolkit to retrieve sequence data.
+   - Inspect an SRA accession
+   - Download SRA data
+   - Convert downloaded data into FASTQ files
+3. **[STAT](sra-notebooks/Demo-03_stat.ipynb)**: Explore sample taxonomy - We can use STAT to run a small taxonomy-based analysis.
+
+   - Use k-mer-based taxonomy info to summarize sequence content
+   - Scrub human data from a FASTQ file
+
 ### Part 3 - Bacterial Pathogens
 
 Presentation: [bacterial_pathogens.pptx](bacterial_pathogens.pptx)
